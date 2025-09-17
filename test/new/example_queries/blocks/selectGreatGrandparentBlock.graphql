@@ -1,0 +1,33 @@
+# query selectGreatGrandparentBlock (
+#     $number: Int!
+# ) {
+#     blocks (where: { number: { _eq: $number}}) {
+#         hash
+#         previousBlock {
+#             number
+#             previousBlock {
+#                 number
+#                 previousBlock {
+#                     number
+#                 }
+#             }
+#         }
+#     }
+# }
+
+query selectGreatGrandparentBlock (
+    $number: Word31Type!
+) {
+    blocks (where: { number: { _eq: $number}}) {
+        hash
+        previousBlock {
+            number
+            previousBlock {
+                number
+                previousBlock {
+                    number
+                }
+            }
+        }
+    }
+}

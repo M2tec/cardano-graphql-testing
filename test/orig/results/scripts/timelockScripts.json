@@ -1,0 +1,14 @@
+{
+  "scripts": [
+    {
+      "__typename": "Script",
+      "hash": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999",
+      "serialisedSize": null,
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "a86d5246c1e5ce7d66446d0a68355abe6622545d8ffe7dd832a062f6cde010bd"
+      },
+      "type": "timelock"
+    }
+  ]
+}

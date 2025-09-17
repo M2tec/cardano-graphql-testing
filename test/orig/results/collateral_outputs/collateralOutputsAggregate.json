@@ -1,0 +1,20 @@
+{
+  "collateralOutputs_aggregate": {
+    "__typename": "CollateralOutput_aggregate",
+    "aggregate": {
+      "__typename": "CollateralOutput_aggregate_fields",
+      "max": {
+        "__typename": "CollateralOutput_max_fields",
+        "value": "333808904997867"
+      },
+      "min": {
+        "__typename": "CollateralOutput_min_fields",
+        "value": "851487"
+      },
+      "sum": {
+        "__typename": "CollateralOutput_sum_fields",
+        "value": "5486547330020988"
+      }
+    }
+  }
+}

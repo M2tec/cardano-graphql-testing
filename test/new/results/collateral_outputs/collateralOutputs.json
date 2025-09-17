@@ -1,0 +1,16 @@
+{
+  "collateralOutputs": [
+    {
+      "__typename": "CollateralOutput",
+      "address": "addr_test1vq85t2h3k22emdh9l72dhv0cywlj2a5qc0rj8tpdf8uh23st77ahh",
+      "transaction": {
+        "__typename": "Transaction",
+        "block": {
+          "__typename": "Block",
+          "number": 178279
+        }
+      },
+      "value": "9995000000"
+    }
+  ]
+}

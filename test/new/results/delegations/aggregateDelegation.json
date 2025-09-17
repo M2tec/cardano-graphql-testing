@@ -1,0 +1,12 @@
+{
+  "delegations_aggregate": {
+    "__typename": "DelegationsAggregate",
+    "aggregate": {
+      "__typename": "DelegationAggregates",
+      "sum": {
+        "__typename": "DelegationSumAggregates",
+        "id": "2666873028"
+      }
+    }
+  }
+}

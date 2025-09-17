@@ -1,0 +1,26 @@
+{
+  "utxos": [
+    {
+      "__typename": "Utxo",
+      "address": "addr_test1vqwmagjy7p0chazq4602jj2966gvzrgtfxfcp8psp5ls7kcwjmuwl",
+      "transaction": {
+        "__typename": "Transaction",
+        "block": {
+          "__typename": "Block",
+          "number": 3784024
+        }
+      }
+    },
+    {
+      "__typename": "Utxo",
+      "address": "addr_test1zprvze2el2ecdrx0t0euqxxyk5zuy4jjewq5gqzlc2j9cdsv87rcplugsuzrxq7j0h00yp28cthll5tlz23g0nh4gkmqn3nacs",
+      "transaction": {
+        "__typename": "Transaction",
+        "block": {
+          "__typename": "Block",
+          "number": 2830943
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "hash": "c1bb6a765ac42c5bb80e531d1feaa5bd4a4f0d55c331baffa9b014b942995947",
+      "collateralInputs": [
+        {
+          "__typename": "CollateralInput",
+          "address": "addr_test1qzu4zx26m7067am9g3zpkt3mh86j33vd6vtv5r35rxdcxwsye5pj8aafutn263fps7hk9vgkyfx7r7gfnmxfpn2v8zrqpwmzcx",
+          "sourceTransaction": {
+            "__typename": "Transaction",
+            "hash": "5b7e7789b5a71101d12c7d8070b74bb4576c361529a089176bf6c073650b9b5e"
+          },
+          "sourceTxHash": "5b7e7789b5a71101d12c7d8070b74bb4576c361529a089176bf6c073650b9b5e",
+          "sourceTxIndex": 0,
+          "tokens": [],
+          "tokens_aggregate": {
+            "__typename": "Token_aggregate",
+            "aggregate": {
+              "__typename": "Token_aggregate_fields",
+              "sum": {
+                "__typename": "Token_sum_fields",
+                "quantity": null
+              }
+            }
+          },
+          "value": "7413772505"
+        }
+      ],
+      "collateralInputs_aggregate": {
+        "__typename": "CollateralInput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionInput_aggregate_fields",
+          "count": "1",
+          "max": {
+            "__typename": "TransactionInput_max_fields",
+            "value": "7413772505"
+          },
+          "min": {
+            "__typename": "TransactionInput_min_fields",
+            "value": "7413772505"
+          },
+          "sum": {
+            "__typename": "TransactionInput_sum_fields",
+            "value": "7413772505"
+          }
+        }
+      },
+      "collateralOutputs": [
+        {
+          "__typename": "CollateralOutput",
+          "address": "addr_test1qzu4zx26m7067am9g3zpkt3mh86j33vd6vtv5r35rxdcxwsye5pj8aafutn263fps7hk9vgkyfx7r7gfnmxfpn2v8zrqpwmzcx",
+          "addressHasScript": false,
+          "datum": null,
+          "index": 2,
+          "paymentCredential": "b951195adf9faf776544441b2e3bb9f528c58dd316ca0e34199b833a",
+          "script": null,
+          "value": "7408772505"
+        }
+      ],
+      "collateralOutputs_aggregate": {
+        "__typename": "CollateralOutput_aggregate",
+        "aggregate": {
+          "__typename": "CollateralOutput_aggregate_fields",
+          "count": "1",
+          "max": {
+            "__typename": "CollateralOutput_max_fields",
+            "value": "7408772505"
+          },
+          "min": {
+            "__typename": "CollateralOutput_min_fields",
+            "value": "7408772505"
+          },
+          "sum": {
+            "__typename": "CollateralOutput_sum_fields",
+            "value": "7408772505"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "metadata": [
+        {
+          "__typename": "TransactionMetadata",
+          "key": "1",
+          "value": {
+            "cardano": "First Metadata from cardanocli-js"
+          }
+        }
+      ]
+    }
+  ]
+}

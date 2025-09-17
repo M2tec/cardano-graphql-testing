@@ -1,0 +1,15 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "hash": "a3d6f2627a56fe7921eeda546abfe164321881d41549b7f2fbf09ea0b718d758",
+      "outputs_aggregate": {
+        "__typename": "TransactionOutput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionOutput_aggregate_fields",
+          "count": "1"
+        }
+      }
+    }
+  ]
+}

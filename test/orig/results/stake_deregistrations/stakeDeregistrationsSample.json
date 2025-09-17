@@ -1,0 +1,44 @@
+{
+  "stakeDeregistrations": [
+    {
+      "__typename": "StakeDeregistration",
+      "address": "stake_test1urzksdqacdrcwmqu08s8mcl8vfj4vz72fwu7dtulxmjqjgc5sg3xp",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "63a32dc0cbd2ff674ca6fd60fcaae122b1cae05154f707bf8f2b5777e27edcc7"
+      }
+    },
+    {
+      "__typename": "StakeDeregistration",
+      "address": "stake_test1urzksdqacdrcwmqu08s8mcl8vfj4vz72fwu7dtulxmjqjgc5sg3xp",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "543dd5eb80eb34d4caabeb00f7137e9330d1c8afa890d367ef8bdfad24b7f321"
+      }
+    },
+    {
+      "__typename": "StakeDeregistration",
+      "address": "stake_test1uzyrwmnscz0emq3vch7n4zhpu3dftfaz6a70pacsygz76ecv9zr3c",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "d262a20c8a92c9d6642afcc6b95adabcbad591298755ce357ff1158fdb350127"
+      }
+    },
+    {
+      "__typename": "StakeDeregistration",
+      "address": "stake_test1uzyrwmnscz0emq3vch7n4zhpu3dftfaz6a70pacsygz76ecv9zr3c",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "0610d3b8dc866e3e5aa45161447edea5f2c560d3bbf5ac43e98b4bbea22d4b3b"
+      }
+    },
+    {
+      "__typename": "StakeDeregistration",
+      "address": "stake_test1urezz3qujsu2wrpcghhgqp5pz0wcuzr228kg3xe4px74clcep7tvf",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "8f2cbb0c12af2388c9964204c6f8ae147d82092a52c54a2663b7858d390d6f00"
+      }
+    }
+  ]
+}

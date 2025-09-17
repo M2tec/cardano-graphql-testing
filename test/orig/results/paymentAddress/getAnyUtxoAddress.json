@@ -1,0 +1,26 @@
+{
+  "utxos": [
+    {
+      "__typename": "TransactionOutput",
+      "address": "addr_test1wr5p69way0hwnjhw8kv3y68shxv00syg7nyx4dg9cjafuwch05rzl",
+      "transaction": {
+        "__typename": "Transaction",
+        "block": {
+          "__typename": "Block",
+          "number": 410153
+        }
+      }
+    },
+    {
+      "__typename": "TransactionOutput",
+      "address": "addr_test1zz3lpatjqas7kxmvd34nzyh7j6hsenynuwhfyllsevuttmx6hlww9sc4lmdsne9688dugdzcvcjhamjrmyczu0jtgqfsnzdk9a",
+      "transaction": {
+        "__typename": "Transaction",
+        "block": {
+          "__typename": "Block",
+          "number": 1398964
+        }
+      }
+    }
+  ]
+}

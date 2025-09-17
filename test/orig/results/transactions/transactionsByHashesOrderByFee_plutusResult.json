@@ -1,0 +1,94 @@
+{
+  "data": {
+    "transactions": [
+      {
+        "__typename": "Transaction",
+        "block": {
+          "__typename": "Block",
+          "number": 212294
+        },
+        "blockIndex": 0,
+        "collateralInputs": [
+          {
+            "__typename": "CollateralInput",
+            "value": "9993865987"
+          }
+        ],
+        "deposit": "0",
+        "fee": "922864",
+        "hash": "750eed6d314f64d8d5b5fe10a4bc34fe21bbf9c657660e061b26f091dac21717",
+        "inputs": [
+          {
+            "__typename": "TransactionInput",
+            "address": "addr_test1wrp082rs5aa6a2pp55heu56gtmashrwx373230exgjm09vcygvy48",
+            "sourceTxIndex": 0,
+            "sourceTxHash": "1ac7c37eda5e446a10066fddaae5a1bdbedbc828cfc1ecf21f8308d4714b192a",
+            "value": "1387820"
+          },
+          {
+            "__typename": "TransactionInput",
+            "address": "addr_test1qzmh55q6yrdvy52jyze9amqm28v26svjqstwgyhyfm9936z8cxm47kgqa3pgqvxhtfec076jmhfzj5v8pav5eewqxymqqpatlt",
+            "sourceTxIndex": 0,
+            "sourceTxHash": "b1d3ace8421a7d1549577054d1e7f437cbcf9fd91a54361fd7ab940a90778b92",
+            "value": "9993865987"
+          }
+        ],
+        "inputs_aggregate": {
+          "__typename": "TransactionInput_aggregate",
+          "aggregate": {
+            "__typename": "TransactionInput_aggregate_fields",
+            "sum": {
+              "__typename": "TransactionInput_sum_fields",
+              "value": "9995253807"
+            }
+          }
+        },
+        "outputs": [
+          {
+            "__typename": "TransactionOutput",
+            "index": 0,
+            "address": "addr_test1qzmh55q6yrdvy52jyze9amqm28v26svjqstwgyhyfm9936z8cxm47kgqa3pgqvxhtfec076jmhfzj5v8pav5eewqxymqqpatlt",
+            "addressHasScript": false,
+            "paymentCredential": "b77a501a20dac2515220b25eec1b51d8ad41920416e412e44eca58e8",
+            "value": "9994330943"
+          }
+        ],
+        "outputs_aggregate": {
+          "__typename": "TransactionOutput_aggregate",
+          "aggregate": {
+            "__typename": "TransactionOutput_aggregate_fields",
+            "sum": {
+              "__typename": "TransactionOutput_sum_fields",
+              "value": "9994330943"
+            }
+          }
+        },
+        "redeemers": [
+          {
+            "__typename": "Redeemer",
+            "scriptHash": "c2f3a870a77baea821a52f9e53485efb0b8dc68fa2a8bf2644b6f2b3"
+          },
+          {
+            "__typename": "Redeemer",
+            "scriptHash": "7348135a9aa87bff1beba4e7fe72e66dd4cf785fcb2f221002b90ede"
+          }
+        ],
+        "scripts": [],
+        "scriptSize": 15677,
+        "size": 16313,
+        "totalOutput": "9994330943",
+        "validContract": true,
+        "withdrawals_aggregate": {
+          "__typename": "Withdrawal_aggregate",
+          "aggregate": {
+            "__typename": "Withdrawal_aggregate_fields",
+            "sum": {
+              "__typename": "Withdrawal_sum_fields",
+              "amount": null
+            }
+          }
+        }
+      }
+    ]
+  }
+}

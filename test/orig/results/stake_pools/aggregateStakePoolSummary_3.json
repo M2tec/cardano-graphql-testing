@@ -1,0 +1,21 @@
+{
+  "stakePools_aggregate": {
+    "__typename": "StakePool_aggregate",
+    "aggregate": {
+      "__typename": "StakePool_aggregate_fields",
+      "count": "115",
+      "max": {
+        "__typename": "StakePool_max_fields",
+        "fixedCost": "10000000000",
+        "margin": 1,
+        "pledge": "100000000000000"
+      },
+      "sum": {
+        "__typename": "StakePool_sum_fields",
+        "fixedCost": "58959000000",
+        "margin": 37.987899999999996,
+        "pledge": "301794908863068"
+      }
+    }
+  }
+}

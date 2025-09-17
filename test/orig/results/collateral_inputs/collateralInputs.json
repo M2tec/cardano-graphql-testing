@@ -1,0 +1,17 @@
+{
+  "collateralInputs": [
+    {
+      "__typename": "CollateralInput",
+      "address": "addr_test1vq85t2h3k22emdh9l72dhv0cywlj2a5qc0rj8tpdf8uh23st77ahh",
+      "sourceTransaction": {
+        "__typename": "Transaction",
+        "hash": "3af0570cd555abee485f9597fe8aa7440a5e27bcc6f4d39b13ec9a8d55d56c97"
+      },
+      "value": "10000000000",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "d5fed4dca96c7efda3d1b0897c91c0eee8f8c6a18e5931dfbd56b6ec7a5951a1"
+      }
+    }
+  ]
+}

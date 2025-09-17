@@ -1,0 +1,30 @@
+{
+  "redeemers": [
+    {
+      "__typename": "Redeemer",
+      "datum": {
+        "__typename": "Datum",
+        "bytes": "d87980",
+        "hash": "923918e403bf43c34b4ef6b48eb2ee04babed17320d8d1b9ff9ad086e86f44ec",
+        "firstIncludedIn": {
+          "__typename": "Transaction",
+          "hash": "d5fed4dca96c7efda3d1b0897c91c0eee8f8c6a18e5931dfbd56b6ec7a5951a1"
+        },
+        "value": {
+          "fields": [],
+          "constructor": 0
+        }
+      },
+      "fee": "70321",
+      "index": 0,
+      "purpose": "mint",
+      "scriptHash": "1cf569e1ec3e0fee92f1f5002bfd4213b796c151c708db46e6e2d3a4",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "d5fed4dca96c7efda3d1b0897c91c0eee8f8c6a18e5931dfbd56b6ec7a5951a1"
+      },
+      "unitMem": "881262",
+      "unitSteps": "270069846"
+    }
+  ]
+}

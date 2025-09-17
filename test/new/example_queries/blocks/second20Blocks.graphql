@@ -1,0 +1,13 @@
+# query second20Blocks {
+#     blocks (limit: 20, offset: 23, order_by: { number: asc }) {
+#         hash
+#         number
+#     }
+# }
+
+query second20Blocks {
+    blocks (limit: 20, offset: 23, order_by: BLOCKS_BY_NEXT_BLOCK_HASH_COUNT_ASC) {
+        hash
+        number
+    }
+}

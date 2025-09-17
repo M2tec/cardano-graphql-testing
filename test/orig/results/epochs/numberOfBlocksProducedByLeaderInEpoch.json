@@ -1,0 +1,16 @@
+{
+  "epochs": [
+    {
+      "__typename": "Epoch",
+      "blocks_aggregate": {
+        "__typename": "Block_aggregate",
+        "aggregate": {
+          "__typename": "Block_aggregate_fields",
+          "count": "0"
+        }
+      },
+      "fees": "1977055339",
+      "number": 42
+    }
+  ]
+}

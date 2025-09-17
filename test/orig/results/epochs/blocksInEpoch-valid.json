@@ -1,0 +1,16 @@
+{
+  "epochs": [
+    {
+      "__typename": "Epoch",
+      "blocks": [
+        {
+          "__typename": "Block",
+          "epoch": {
+            "__typename": "Epoch",
+            "number": 1
+          }
+        }
+      ]
+    }
+  ]
+}

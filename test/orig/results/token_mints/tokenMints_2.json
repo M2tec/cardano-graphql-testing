@@ -1,0 +1,75 @@
+{
+  "tokenMints": [
+    {
+      "__typename": "TokenMint",
+      "asset": {
+        "__typename": "Asset",
+        "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb33799953554d4d495441574152445344656669",
+        "assetName": "53554d4d495441574152445344656669",
+        "description": null,
+        "fingerprint": "asset132r28qxkhg0wddjjpt2qffzd9m7g37arndlxsv",
+        "logo": null,
+        "name": null,
+        "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999",
+        "ticker": null,
+        "url": null
+      },
+      "quantity": "1",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "a86d5246c1e5ce7d66446d0a68355abe6622545d8ffe7dd832a062f6cde010bd"
+      }
+    },
+    {
+      "__typename": "TokenMint",
+      "asset": {
+        "__typename": "Asset",
+        "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb33799953554d4d495441574152445344656669",
+        "assetName": "53554d4d495441574152445344656669",
+        "description": null,
+        "fingerprint": "asset132r28qxkhg0wddjjpt2qffzd9m7g37arndlxsv",
+        "logo": null,
+        "name": null,
+        "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999",
+        "ticker": null,
+        "url": null
+      },
+      "quantity": "-1",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "a9279f32f7d36320b61074e7abd95651c8c01f0be2b91a06d9d3e99d00d18602"
+      }
+    },
+    {
+      "__typename": "TokenMint",
+      "asset": {
+        "__typename": "Asset",
+        "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb33799953554d4d495441574152445344656669",
+        "assetName": "53554d4d495441574152445344656669",
+        "description": null,
+        "fingerprint": "asset132r28qxkhg0wddjjpt2qffzd9m7g37arndlxsv",
+        "logo": null,
+        "name": null,
+        "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999",
+        "ticker": null,
+        "url": null
+      },
+      "quantity": "1",
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "d1f35a6c136816bd9224426846cbbec5d06dd033b1662207aa9755b76872e42c"
+      }
+    }
+  ],
+  "tokenMints_aggregate": {
+    "__typename": "TokenMint_aggregate",
+    "aggregate": {
+      "__typename": "TokenMint_aggregate_fields",
+      "count": "2271711",
+      "sum": {
+        "__typename": "TokenMint_sum_fields",
+        "quantity": "116082308678680438739295"
+      }
+    }
+  }
+}

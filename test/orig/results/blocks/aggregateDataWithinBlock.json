@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "__typename": "Block",
+      "transactions_aggregate": {
+        "__typename": "Transaction_aggregate",
+        "aggregate": {
+          "__typename": "Transaction_aggregate_fields",
+          "count": "456",
+          "max": {
+            "__typename": "Transaction_max_fields",
+            "fee": "191461",
+            "size": 194,
+            "totalOutput": "9264215377"
+          },
+          "min": {
+            "__typename": "Transaction_min_fields",
+            "fee": "191461",
+            "size": 190,
+            "totalOutput": "476354165"
+          },
+          "sum": {
+            "__typename": "Transaction_sum_fields",
+            "deposit": "0",
+            "fee": "87306216",
+            "size": 87248,
+            "totalOutput": "1562954414160"
+          }
+        }
+      },
+      "number": 283413
+    }
+  ]
+}

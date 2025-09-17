@@ -1,0 +1,9 @@
+{
+  "stakeRegistrations_aggregate": {
+    "__typename": "StakeRegistration_aggregate",
+    "aggregate": {
+      "__typename": "StakeRegistration_aggregate_fields",
+      "count": "44542"
+    }
+  }
+}

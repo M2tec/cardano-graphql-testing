@@ -1,0 +1,59 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "hash": "93818dc2e98d924c7379e9a65a44e4890981e675d7e0d23601194c7dff01b0b3",
+      "referenceInputs": [
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1wr8h9xuednt82rmw7ptcdzqw7d65chtqr0e5mnkju09c0mqjz722h",
+          "sourceTransaction": {
+            "__typename": "Transaction",
+            "hash": "03d2fdb6407dc21bda7037a88c65da250766acd02327727dcf4d12fe7268833c"
+          },
+          "sourceTxHash": "03d2fdb6407dc21bda7037a88c65da250766acd02327727dcf4d12fe7268833c",
+          "sourceTxIndex": 1
+        },
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1wp63gyh62h77wfaa35c8u5zynulzp2afkl7yrpcr2zkk34gkwah0z",
+          "sourceTransaction": {
+            "__typename": "Transaction",
+            "hash": "5fb81bcabefefdb725a26fc9825d517ba79a05f86f845fda42b3f0f54b7ab90b"
+          },
+          "sourceTxHash": "5fb81bcabefefdb725a26fc9825d517ba79a05f86f845fda42b3f0f54b7ab90b",
+          "sourceTxIndex": 1
+        },
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1wp63gyh62h77wfaa35c8u5zynulzp2afkl7yrpcr2zkk34gkwah0z",
+          "sourceTransaction": {
+            "__typename": "Transaction",
+            "hash": "c3e9dcc6c638b78c2591f74cfca27fba728e56c18e0b5a61a2a0cc900592c59f"
+          },
+          "sourceTxHash": "c3e9dcc6c638b78c2591f74cfca27fba728e56c18e0b5a61a2a0cc900592c59f",
+          "sourceTxIndex": 1
+        }
+      ],
+      "referenceInputs_aggregate": {
+        "__typename": "TransactionInput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionInput_aggregate_fields",
+          "count": "3",
+          "max": {
+            "__typename": "TransactionInput_max_fields",
+            "value": "27989140"
+          },
+          "min": {
+            "__typename": "TransactionInput_min_fields",
+            "value": "27704680"
+          },
+          "sum": {
+            "__typename": "TransactionInput_sum_fields",
+            "value": "83398500"
+          }
+        }
+      }
+    }
+  ]
+}

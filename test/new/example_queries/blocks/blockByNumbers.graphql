@@ -1,0 +1,19 @@
+# query blockByNumber(
+#     $numbers: [Int!]!
+# ) {
+#     blocks (
+#         where: { number: { _in: $numbers}}) {
+#         hash
+#         vrfKey
+#     }
+# }
+
+query blockByNumber(
+    $numbers: [Word31Type!]!
+) {
+    blocks (
+        where: { number: { _in: $numbers}}) {
+        hash
+        vrfKey
+    }
+}

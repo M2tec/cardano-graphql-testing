@@ -1,0 +1,15 @@
+{
+  "cardano": [
+    {
+      "__typename": "Cardano",
+      "tip": {
+        "__typename": "Block",
+        "number": 3891496
+      },
+      "currentEpoch": {
+        "__typename": "Epoch",
+        "number": 239
+      }
+    }
+  ]
+}

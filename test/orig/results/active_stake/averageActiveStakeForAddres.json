@@ -1,0 +1,9 @@
+{
+  "activeStake_aggregate": {
+    "__typename": "ActiveStake_aggregate",
+    "aggregate": {
+      "__typename": "ActiveStake_aggregate_fields",
+      "count": "191"
+    }
+  }
+}

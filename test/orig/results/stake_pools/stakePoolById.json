@@ -1,0 +1,9 @@
+{
+  "stakePools": [
+    {
+      "__typename": "StakePool",
+      "hash": "a57cbcb8ecdf24f469928da924b5bc6e4cbc3b57859577211a0daf6f",
+      "id": "pool1547tew8vmuj0g6vj3k5jfddudextcw6hsk2hwgg6pkhk7lwphe6"
+    }
+  ]
+}

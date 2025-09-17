@@ -1,0 +1,80 @@
+{
+  "epochs": [
+    {
+      "__typename": "Epoch",
+      "blocksCount": "10",
+      "activeStake_aggregate": {
+        "__typename": "ActiveStake_aggregate",
+        "aggregate": {
+          "__typename": "ActiveStake_aggregate_fields",
+          "sum": {
+            "__typename": "ActiveStake_sum_fields",
+            "amount": null
+          }
+        }
+      },
+      "blocks_aggregate": {
+        "__typename": "Block_aggregate",
+        "aggregate": {
+          "__typename": "Block_aggregate_fields",
+          "count": "10",
+          "max": {
+            "__typename": "Block_max_fields",
+            "fees": "0",
+            "size": 625
+          },
+          "min": {
+            "__typename": "Block_min_fields",
+            "fees": "0",
+            "size": 623
+          },
+          "sum": {
+            "__typename": "Block_sum_fields",
+            "fees": "0",
+            "size": 6248
+          }
+        }
+      },
+      "fees": "0",
+      "number": 1
+    },
+    {
+      "__typename": "Epoch",
+      "blocksCount": "20282",
+      "activeStake_aggregate": {
+        "__typename": "ActiveStake_aggregate",
+        "aggregate": {
+          "__typename": "ActiveStake_aggregate_fields",
+          "sum": {
+            "__typename": "ActiveStake_sum_fields",
+            "amount": "437625649134702"
+          }
+        }
+      },
+      "blocks_aggregate": {
+        "__typename": "Block_aggregate",
+        "aggregate": {
+          "__typename": "Block_aggregate_fields",
+          "count": "20282",
+          "max": {
+            "__typename": "Block_max_fields",
+            "fees": "5965850",
+            "size": 84865
+          },
+          "min": {
+            "__typename": "Block_min_fields",
+            "fees": "0",
+            "size": 4
+          },
+          "sum": {
+            "__typename": "Block_sum_fields",
+            "fees": "1977055339",
+            "size": 11577711
+          }
+        }
+      },
+      "fees": "1977055339",
+      "number": 42
+    }
+  ]
+}

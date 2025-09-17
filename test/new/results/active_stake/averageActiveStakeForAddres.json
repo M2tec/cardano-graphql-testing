@@ -1,0 +1,12 @@
+{
+  "activeStake_aggregate": {
+    "__typename": "ActiveStakesAggregate",
+    "aggregate": {
+      "__typename": "ActiveStakeAggregates",
+      "distinctCount": {
+        "__typename": "ActiveStakeDistinctCountAggregates",
+        "amount": "176"
+      }
+    }
+  }
+}

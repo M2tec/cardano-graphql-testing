@@ -1,0 +1,17 @@
+# query allDelegationFields {
+#     delegations_aggregate {
+#         aggregate {
+#             count
+#         }
+#     }
+# }
+
+query allDelegationFields {
+  delegations_aggregate {
+    aggregate {
+      sum {
+        id
+      }
+    }
+  }
+}

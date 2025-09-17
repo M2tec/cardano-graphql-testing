@@ -1,0 +1,26 @@
+{
+  "redeemers_aggregate": {
+    "__typename": "Redeemer_aggregate",
+    "aggregate": {
+      "__typename": "Redeemer_aggregate_fields",
+      "max": {
+        "__typename": "Redeemer_max_fields",
+        "fee": "1528800",
+        "unitMem": "14000000",
+        "unitSteps": "10000000000"
+      },
+      "min": {
+        "__typename": "Redeemer_min_fields",
+        "fee": "34",
+        "unitMem": "500",
+        "unitSteps": "64100"
+      },
+      "sum": {
+        "__typename": "Redeemer_sum_fields",
+        "fee": "509061425147",
+        "unitMem": "6433857828547",
+        "unitSteps": "1911589665147683"
+      }
+    }
+  }
+}

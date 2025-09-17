@@ -1,0 +1,15 @@
+{
+  "blocks": [
+    {
+      "__typename": "Block",
+      "transactions_aggregate": {
+        "__typename": "Transaction_aggregate",
+        "aggregate": {
+          "__typename": "Transaction_aggregate_fields",
+          "count": "456"
+        }
+      },
+      "number": 283413
+    }
+  ]
+}

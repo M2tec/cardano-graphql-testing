@@ -1,0 +1,48 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "deposit": "0",
+      "fee": "207829",
+      "hash": "59f68ea73b95940d443dc516702d5e5deccac2429e4d974f464cc9b26292fd9c",
+      "inputs_aggregate": {
+        "__typename": "TransactionInput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionInput_aggregate_fields",
+          "count": "1",
+          "max": {
+            "__typename": "TransactionInput_max_fields",
+            "value": "29699998493355698"
+          },
+          "min": {
+            "__typename": "TransactionInput_min_fields",
+            "value": "29699998493355698"
+          },
+          "sum": {
+            "__typename": "TransactionInput_sum_fields",
+            "value": "29699998493355698"
+          }
+        }
+      },
+      "outputs_aggregate": {
+        "__typename": "TransactionOutput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionOutput_aggregate_fields",
+          "count": "1",
+          "max": {
+            "__typename": "TransactionOutput_max_fields",
+            "value": "29699998493147869"
+          },
+          "min": {
+            "__typename": "TransactionOutput_min_fields",
+            "value": "29699998493147869"
+          },
+          "sum": {
+            "__typename": "TransactionOutput_sum_fields",
+            "value": "29699998493147869"
+          }
+        }
+      }
+    }
+  ]
+}

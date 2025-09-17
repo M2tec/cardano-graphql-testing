@@ -1,0 +1,94 @@
+{
+  "rewards": [
+    {
+      "__typename": "Reward",
+      "address": "stake_test1uqvvzkxjzdu62l4nmcth7j0za6hragkyx8hgs6ywpk9mx0ggzmtey",
+      "amount": "4768844",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "60015bb5c3bd6aae17d954afab54dc8621135360948733b7b28e89e4"
+      },
+      "earnedIn": {
+        "__typename": "Epoch",
+        "number": 36
+      },
+      "receivedIn": {
+        "__typename": "Epoch",
+        "number": 38
+      },
+      "type": "member"
+    },
+    {
+      "__typename": "Reward",
+      "address": "stake_test1uqvvzkxjzdu62l4nmcth7j0za6hragkyx8hgs6ywpk9mx0ggzmtey",
+      "amount": "4035458",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "60015bb5c3bd6aae17d954afab54dc8621135360948733b7b28e89e4"
+      },
+      "earnedIn": {
+        "__typename": "Epoch",
+        "number": 37
+      },
+      "receivedIn": {
+        "__typename": "Epoch",
+        "number": 39
+      },
+      "type": "member"
+    },
+    {
+      "__typename": "Reward",
+      "address": "stake_test1uqvvzkxjzdu62l4nmcth7j0za6hragkyx8hgs6ywpk9mx0ggzmtey",
+      "amount": "5316243",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "60015bb5c3bd6aae17d954afab54dc8621135360948733b7b28e89e4"
+      },
+      "earnedIn": {
+        "__typename": "Epoch",
+        "number": 38
+      },
+      "receivedIn": {
+        "__typename": "Epoch",
+        "number": 40
+      },
+      "type": "member"
+    },
+    {
+      "__typename": "Reward",
+      "address": "stake_test1uqvvzkxjzdu62l4nmcth7j0za6hragkyx8hgs6ywpk9mx0ggzmtey",
+      "amount": "6130303",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "60015bb5c3bd6aae17d954afab54dc8621135360948733b7b28e89e4"
+      },
+      "earnedIn": {
+        "__typename": "Epoch",
+        "number": 39
+      },
+      "receivedIn": {
+        "__typename": "Epoch",
+        "number": 41
+      },
+      "type": "member"
+    },
+    {
+      "__typename": "Reward",
+      "address": "stake_test1uqvvzkxjzdu62l4nmcth7j0za6hragkyx8hgs6ywpk9mx0ggzmtey",
+      "amount": "6112496",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "60015bb5c3bd6aae17d954afab54dc8621135360948733b7b28e89e4"
+      },
+      "earnedIn": {
+        "__typename": "Epoch",
+        "number": 40
+      },
+      "receivedIn": {
+        "__typename": "Epoch",
+        "number": 42
+      },
+      "type": "member"
+    }
+  ]
+}

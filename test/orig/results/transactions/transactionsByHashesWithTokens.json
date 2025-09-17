@@ -1,0 +1,91 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "block": {
+        "__typename": "Block",
+        "number": 234850
+      },
+      "blockIndex": 1,
+      "deposit": "0",
+      "fee": "451312",
+      "hash": "c1bb6a765ac42c5bb80e531d1feaa5bd4a4f0d55c331baffa9b014b942995947",
+      "inputs": [
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qzu4zx26m7067am9g3zpkt3mh86j33vd6vtv5r35rxdcxwsye5pj8aafutn263fps7hk9vgkyfx7r7gfnmxfpn2v8zrqpwmzcx",
+          "sourceTxIndex": 0,
+          "sourceTxHash": "5b7e7789b5a71101d12c7d8070b74bb4576c361529a089176bf6c073650b9b5e",
+          "value": "7413772505"
+        },
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1zrrryp45pgzvkha6hkxhsann0wcntvgjmznr6uwz2v0uvfcye5pj8aafutn263fps7hk9vgkyfx7r7gfnmxfpn2v8zrqnghs3t",
+          "sourceTxIndex": 1,
+          "sourceTxHash": "5b7e7789b5a71101d12c7d8070b74bb4576c361529a089176bf6c073650b9b5e",
+          "value": "1006657521"
+        }
+      ],
+      "inputs_aggregate": {
+        "__typename": "TransactionInput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionInput_aggregate_fields",
+          "sum": {
+            "__typename": "TransactionInput_sum_fields",
+            "value": "8420430026"
+          }
+        }
+      },
+      "mint": [],
+      "outputs": [
+        {
+          "__typename": "TransactionOutput",
+          "index": 0,
+          "address": "addr_test1qzu4zx26m7067am9g3zpkt3mh86j33vd6vtv5r35rxdcxwsye5pj8aafutn263fps7hk9vgkyfx7r7gfnmxfpn2v8zrqpwmzcx",
+          "value": "7412988317",
+          "tokens": []
+        },
+        {
+          "__typename": "TransactionOutput",
+          "index": 1,
+          "address": "addr_test1zrrryp45pgzvkha6hkxhsann0wcntvgjmznr6uwz2v0uvfcye5pj8aafutn263fps7hk9vgkyfx7r7gfnmxfpn2v8zrqnghs3t",
+          "value": "1006990397",
+          "tokens": [
+            {
+              "__typename": "Token",
+              "asset": {
+                "__typename": "Asset",
+                "assetId": "87aa0c11bb8f94d523a74fe7badded9c4908d1a65c8a6443e9f98db4b5966c13f108a088b3866cf685862f78817291c413ccbb4e4f47a630a2fb653a",
+                "assetName": "b5966c13f108a088b3866cf685862f78817291c413ccbb4e4f47a630a2fb653a",
+                "policyId": "87aa0c11bb8f94d523a74fe7badded9c4908d1a65c8a6443e9f98db4"
+              },
+              "quantity": "1"
+            }
+          ]
+        }
+      ],
+      "outputs_aggregate": {
+        "__typename": "TransactionOutput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionOutput_aggregate_fields",
+          "sum": {
+            "__typename": "TransactionOutput_sum_fields",
+            "value": "8419978714"
+          }
+        }
+      },
+      "size": 5639,
+      "totalOutput": "8419978714",
+      "withdrawals_aggregate": {
+        "__typename": "Withdrawal_aggregate",
+        "aggregate": {
+          "__typename": "Withdrawal_aggregate_fields",
+          "sum": {
+            "__typename": "Withdrawal_sum_fields",
+            "amount": null
+          }
+        }
+      }
+    }
+  ]
+}

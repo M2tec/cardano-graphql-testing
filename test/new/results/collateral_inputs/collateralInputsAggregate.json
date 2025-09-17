@@ -1,0 +1,20 @@
+{
+  "collateralInputs_aggregate": {
+    "__typename": "CollateralInputRecordsAggregate",
+    "aggregate": {
+      "__typename": "CollateralInputRecordAggregates",
+      "max": {
+        "__typename": "CollateralInputRecordMaxAggregates",
+        "value": "333808905297095"
+      },
+      "min": {
+        "__typename": "CollateralInputRecordMinAggregates",
+        "value": "849070"
+      },
+      "sum": {
+        "__typename": "CollateralInputRecordSumAggregates",
+        "value": "6477271648381936"
+      }
+    }
+  }
+}

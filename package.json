@@ -1,0 +1,34 @@
+{
+  "name": "cardano-graphql-testing",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "@blockfrost/blockfrost-js": "^6.0.0",
+    "cross-fetch": "^4.1.0",
+    "graphql-tag": "^2.12.6",
+    "jest": "^30.1.3",
+    "p-retry": "^4.6.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "blockfrost": "node ./test/blockfrost/test.js",
+    "dev": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M2tec/cardano-graphql-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M2tec/cardano-graphql-testing/issues"
+  },
+  "homepage": "https://github.com/M2tec/cardano-graphql-testing#readme"
+}

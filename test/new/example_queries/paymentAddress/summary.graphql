@@ -1,0 +1,34 @@
+# query paymentAddressSummay(
+#   $addresses: [String!]!
+#   $atBlock: Int
+# ) {
+#   paymentAddresses (addresses: $addresses) {
+#     summary (atBlock: $atBlock){
+#       assetBalances {
+#         asset {
+#           assetId
+#           description
+#           name
+#         }
+#         quantity
+#       }
+#     }
+#   }
+# }
+
+query paymentAddressSummay(
+  $addresses: [String!]!
+) {
+  paymentAddresses (addresses: $addresses) {
+    summary {
+      assetbalances {
+        asset {
+          assetId
+          description
+          name
+        }
+        quantity
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "stakeDeregistrations_aggregate": {
+    "__typename": "StakeDeregistration_aggregate",
+    "aggregate": {
+      "__typename": "StakeDeregistration_aggregate_fields",
+      "count": "15654"
+    }
+  }
+}

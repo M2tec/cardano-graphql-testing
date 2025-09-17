@@ -1,0 +1,37 @@
+# query activeStakeForAddress (
+#     $limit: Int!
+#     $where: ActiveStake_bool_exp
+# ) {
+#     activeStake (limit: $limit, where: $where) {
+#         address
+#         amount
+#         epoch {
+#             number
+#         }
+#         epochNo
+#         registeredWith {
+#             hash
+#         }
+#         stakePoolHash
+#         stakePoolId
+#     }
+# }
+
+
+query activeStakeForAddress (
+    $limit: Int!
+) {
+    activeStake (limit: $limit) {
+        address
+        amount
+        epoch {
+            number
+        }
+        epochNo
+        registeredWith {
+            hash
+        }
+        stakePoolHash
+        stakePoolId
+    }
+}

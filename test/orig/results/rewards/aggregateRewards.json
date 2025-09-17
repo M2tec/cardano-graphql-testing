@@ -1,0 +1,21 @@
+{
+  "rewards_aggregate": {
+    "__typename": "Reward_aggregate",
+    "aggregate": {
+      "__typename": "Reward_aggregate_fields",
+      "count": "1316281",
+      "max": {
+        "__typename": "Reward_max_fields",
+        "amount": "66172734104"
+      },
+      "min": {
+        "__typename": "Reward_min_fields",
+        "amount": "0"
+      },
+      "sum": {
+        "__typename": "Reward_sum_fields",
+        "amount": "41887340730935"
+      }
+    }
+  }
+}

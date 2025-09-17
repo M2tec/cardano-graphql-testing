@@ -1,0 +1,20 @@
+{
+  "scripts_aggregate": {
+    "__typename": "Script_aggregate",
+    "aggregate": {
+      "__typename": "Script_aggregate_fields",
+      "max": {
+        "__typename": "Script_max_fields",
+        "serialisedSize": 16104
+      },
+      "min": {
+        "__typename": "Script_min_fields",
+        "serialisedSize": 6
+      },
+      "sum": {
+        "__typename": "Script_sum_fields",
+        "serialisedSize": 364444298
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "outputs": [],
+      "outputs_aggregate": {
+        "__typename": "TransactionOutput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionOutput_aggregate_fields",
+          "count": "0"
+        }
+      },
+      "inputs_aggregate": {
+        "__typename": "TransactionInput_aggregate",
+        "aggregate": {
+          "__typename": "TransactionInput_aggregate_fields",
+          "count": "1"
+        }
+      },
+      "totalOutput": "0"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "assets": [
+    {
+      "__typename": "Asset",
+      "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb33799953554d4d495441574152445344656669",
+      "assetName": "53554d4d495441574152445344656669",
+      "decimals": null,
+      "description": null,
+      "fingerprint": "asset132r28qxkhg0wddjjpt2qffzd9m7g37arndlxsv",
+      "logo": null,
+      "name": null,
+      "ticker": null,
+      "tokenMints": [
+        {
+          "__typename": "TokenMint",
+          "quantity": "1",
+          "transaction": {
+            "__typename": "Transaction",
+            "hash": "a86d5246c1e5ce7d66446d0a68355abe6622545d8ffe7dd832a062f6cde010bd"
+          }
+        },
+        {
+          "__typename": "TokenMint",
+          "quantity": "-1",
+          "transaction": {
+            "__typename": "Transaction",
+            "hash": "a9279f32f7d36320b61074e7abd95651c8c01f0be2b91a06d9d3e99d00d18602"
+          }
+        },
+        {
+          "__typename": "TokenMint",
+          "quantity": "1",
+          "transaction": {
+            "__typename": "Transaction",
+            "hash": "d1f35a6c136816bd9224426846cbbec5d06dd033b1662207aa9755b76872e42c"
+          }
+        }
+      ],
+      "tokenMints_aggregate": {
+        "__typename": "TokenMintsAggregate",
+        "aggregate": {
+          "__typename": "TokenMintAggregates",
+          "sum": {
+            "__typename": "TokenMintSumAggregates",
+            "quantity": "1"
+          }
+        }
+      },
+      "url": null,
+      "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999"
+    },
+    {
+      "__typename": "Asset",
+      "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999436f696e41",
+      "assetName": "436f696e41",
+      "decimals": null,
+      "description": null,
+      "fingerprint": "asset1u22slc95y2x5g7r38v3eaw705healz6x2skvr8",
+      "logo": null,
+      "name": null,
+      "ticker": null,
+      "tokenMints": [
+        {
+          "__typename": "TokenMint",
+          "quantity": "1",
+          "transaction": {
+            "__typename": "Transaction",
+            "hash": "e5793239dd16b797cf0984bf992f0c21ffd5e70ccbc6e4ab89a0f471be2cbbed"
+          }
+        },
+        {
+          "__typename": "TokenMint",
+          "quantity": "-1",
+          "transaction": {
+            "__typename": "Transaction",
+            "hash": "890472618e16a09d9ce6bc048378be0150ff8848c04069f24ec60290aace48d1"
+          }
+        }
+      ],
+      "tokenMints_aggregate": {
+        "__typename": "TokenMintsAggregate",
+        "aggregate": {
+          "__typename": "TokenMintAggregates",
+          "sum": {
+            "__typename": "TokenMintSumAggregates",
+            "quantity": "0"
+          }
+        }
+      },
+      "url": null,
+      "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999"
+    }
+  ],
+  "assets_aggregate": {
+    "__typename": "AssetsAggregate",
+    "aggregate": {
+      "__typename": "AssetAggregates",
+      "sum": {
+        "__typename": "AssetSumAggregates",
+        "decimals": "0"
+      }
+    }
+  }
+}

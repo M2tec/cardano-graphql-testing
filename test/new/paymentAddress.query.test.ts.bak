@@ -1,0 +1,89 @@
+import path from 'path'
+
+import util from '../util';
+import { testClient, TestClient } from '../util'
+import { DocumentNode } from 'graphql'
+
+import BigNumber from 'bignumber.js'
+
+function loadQueryNode (name: string): Promise<DocumentNode> {
+  return util.loadQueryNode(path.resolve(__dirname, '..', 'new', 'example_queries', 'paymentAddress'), name)
+}
+
+function loadTestOperationDocument (name: string): Promise<DocumentNode> {
+  return util.loadQueryNode(path.resolve(__dirname, 'graphql_operations'), name)
+}
+
+describe('paymentAddress', () => {
+  let client: TestClient
+  beforeEach(async () => {
+    client = await testClient.preprod()
+    // await new Promise(res => setTimeout(res, 5000)) // wait 1s
+  } )
+
+  it('returns payment address', async () => {
+    const anyUtxoResult = await client.query({
+      query: await loadTestOperationDocument('getAnyUtxoAddress'),
+      variables: { qty: 2 }
+    })
+
+    util.saveResult(anyUtxoResult.data, "new", "paymentAddress", "getAnyUtxoAddress.json");
+
+    // const address1 = (anyUtxoResult.data as any).utxos[0].address
+    
+    // const result = await client.query({
+    //   query: await loadQueryNode('summary'),
+    //   variables: { addresses: [address1] }
+    // })
+
+    // // util.saveResult(result.data, "new", "paymentAddress", "summary.json");
+
+    // const paymentAddress = (result.data as any).paymentAddresses[0]
+    // expect(paymentAddress.summary.assetBalances[0].asset.assetId).toBeDefined()
+    // expect(new BigNumber(paymentAddress.summary.assetBalances[0].quantity).toNumber())
+    //   .toBeGreaterThan(0)
+  })
+
+
+  it('returns payment address summary for the provided addresses', async () => {
+    
+    const result = await client.query({
+      query: await loadQueryNode('summary'),
+      variables: { addresses: ["addr_test1wqveypcqsf2xwjn2uusfn2gj5acwd2yxm8rhd3v8cgg7lus3vs0hp"] }
+    })
+
+    // util.saveResult(result.data, "new", "paymentAddress", "summary.json");
+
+    // const paymentAddress = (result.data as any).paymentAddresses[0]
+    // expect(paymentAddress.summary.assetBalances[0].asset.assetId).toBeDefined()
+    // expect(new BigNumber(paymentAddress.summary.assetBalances[0].quantity).toNumber())
+    //   .toBeGreaterThan(0)
+  })
+
+  // it('can bound the summary by chain length by block number', async () => {
+  //   const anyUtxoResult = await client.query({
+  //     query: await loadTestOperationDocument('getAnyUtxoAddress'),
+  //     variables: { qty: 2 }
+  //   })
+  //   const utxo = anyUtxoResult.data.utxos[0]
+  //   const blockBound = utxo.transaction.block.number - 1
+  //   const unboundedResult = await client.query({
+  //     query: await loadQueryNode('summary'),
+  //     variables: { addresses: [utxo.address] }
+  //   })
+  //   const boundedResult = await client.query({
+  //     query: await loadQueryNode('summary'),
+  //     variables: {
+  //       addresses: [utxo.address],
+  //       atBlock: blockBound
+  //     }
+  //   })
+  //   const unboundedAdaBalance = new BigNumber(
+  //     unboundedResult.data.paymentAddresses[0].summary.assetBalances[0].quantity
+  //   ).toNumber()
+  //   const boundedAdaBalance = new BigNumber(
+  //     boundedResult.data.paymentAddresses[0].summary?.assetBalances[0]?.quantity
+  //   ).toNumber() || 0
+  //   expect(unboundedAdaBalance).toBeGreaterThan(boundedAdaBalance)
+  // })
+})

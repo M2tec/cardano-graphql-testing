@@ -1,0 +1,18 @@
+{
+  "blocks": [
+    {
+      "__typename": "Block",
+      "transactions_aggregate": {
+        "__typename": "TransactionsAggregate",
+        "aggregate": {
+          "__typename": "TransactionAggregates",
+          "sum": {
+            "__typename": "TransactionSumAggregates",
+            "size": "87248"
+          }
+        }
+      },
+      "number": 283413
+    }
+  ]
+}

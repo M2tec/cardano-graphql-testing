@@ -1,0 +1,14 @@
+{
+  "epochs": [
+    {
+      "__typename": "Epoch",
+      "blocksCount": 20282,
+      "fees": "1977055339",
+      "output": "487684785231030",
+      "number": 42,
+      "transactionsCount": 7077,
+      "startedAt": "2022-12-28T00:00:42.000000",
+      "lastBlockTime": "2023-01-01T23:59:38.000000"
+    }
+  ]
+}

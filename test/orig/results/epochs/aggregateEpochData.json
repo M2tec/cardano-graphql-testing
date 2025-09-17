@@ -1,0 +1,25 @@
+{
+  "epochs_aggregate": {
+    "__typename": "Epoch_aggregate",
+    "aggregate": {
+      "__typename": "Epoch_aggregate_fields",
+      "count": "30",
+      "max": {
+        "__typename": "Epoch_max_fields",
+        "number": 29,
+        "output": "17847453521738724661",
+        "transactionsCount": "14188"
+      },
+      "min": {
+        "__typename": "Epoch_min_fields",
+        "output": "0",
+        "transactionsCount": "0"
+      },
+      "sum": {
+        "__typename": "Epoch_sum_fields",
+        "output": "18115468917597078469",
+        "transactionsCount": "18242"
+      }
+    }
+  }
+}

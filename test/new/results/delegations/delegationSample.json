@@ -1,0 +1,89 @@
+{
+  "delegations": [
+    {
+      "__typename": "Delegation",
+      "address": "stake_test1uztg6yppa0t30rslkrneva5c9qju40rhndjnuy356kxw83s6n95nu",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "a57cbcb8ecdf24f469928da924b5bc6e4cbc3b57859577211a0daf6f"
+      },
+      "transaction": {
+        "__typename": "Transaction",
+        "fee": "238057",
+        "totalOutput": "29999998493561943",
+        "block": {
+          "__typename": "Block",
+          "number": 48
+        }
+      }
+    },
+    {
+      "__typename": "Delegation",
+      "address": "stake_test1urcnqgzt2x8hpsvej4zfudehahknm8lux894pmqwg5qshgcrn346q",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "f576ef654ff68f93b2554cce4d0691d4ce3b0a0e8742e5ba71a55b8b"
+      },
+      "transaction": {
+        "__typename": "Transaction",
+        "fee": "238057",
+        "totalOutput": "29999998493561943",
+        "block": {
+          "__typename": "Block",
+          "number": 48
+        }
+      }
+    },
+    {
+      "__typename": "Delegation",
+      "address": "stake_test1uquj460qdrj4az6uy7kvtzct4w8226xq4t30dlzfhc360tgegny4m",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "12946a3fe080dd99af599bfff10a05cd3de19bd38ed85b25dee35dd5"
+      },
+      "transaction": {
+        "__typename": "Transaction",
+        "fee": "238057",
+        "totalOutput": "29999998493561943",
+        "block": {
+          "__typename": "Block",
+          "number": 48
+        }
+      }
+    },
+    {
+      "__typename": "Delegation",
+      "address": "stake_test1uzn083tm8erradk0lwzzkegewdtwj6mukk2ep2r03g9j87g0020y2",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "74f5dd2551c2c0fd71aebb95e1f58d0b742c0fd2ff1712644f709bdc"
+      },
+      "transaction": {
+        "__typename": "Transaction",
+        "fee": "192561",
+        "totalOutput": "9497635910",
+        "block": {
+          "__typename": "Block",
+          "number": 174946
+        }
+      }
+    },
+    {
+      "__typename": "Delegation",
+      "address": "stake_test1urkaxwavpp37j083cvafwymnpmqm5wl6hre4ev99pcyt3tcvq0gns",
+      "stakePool": {
+        "__typename": "StakePool",
+        "hash": "632dc1a4d7ec972aa7c63ba56ce57e1a0fdd8a356f0949f0ded0723a"
+      },
+      "transaction": {
+        "__typename": "Transaction",
+        "fee": "198765",
+        "totalOutput": "9497622534",
+        "block": {
+          "__typename": "Block",
+          "number": 174974
+        }
+      }
+    }
+  ]
+}

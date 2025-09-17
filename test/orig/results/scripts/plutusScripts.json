@@ -1,0 +1,14 @@
+{
+  "scripts": [
+    {
+      "__typename": "Script",
+      "hash": "67f33146617a5e61936081db3b2117cbf59bd2123748f58ac9678656",
+      "serialisedSize": 14,
+      "transaction": {
+        "__typename": "Transaction",
+        "hash": "111fbb8aa49493f29f4b7975d8a95ef82312c0044efb9726c7753055d4ecd939"
+      },
+      "type": "plutusV1"
+    }
+  ]
+}

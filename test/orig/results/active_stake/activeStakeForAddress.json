@@ -1,0 +1,84 @@
+{
+  "activeStake": [
+    {
+      "__typename": "ActiveStake",
+      "address": "stake_test1upxue2rk4tp0e3tp7l0nmfmj6ar7y9yvngzu0vn7fxs9ags2apttt",
+      "amount": "59492447485",
+      "epoch": {
+        "__typename": "Epoch",
+        "number": 30
+      },
+      "epochNo": 30,
+      "registeredWith": {
+        "__typename": "StakePool",
+        "hash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39"
+      },
+      "stakePoolHash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39",
+      "stakePoolId": "pool1mp96jpc2dtaruz0cazmljh03dev0969c4rq3wr6hnc4rjdxn8aw"
+    },
+    {
+      "__typename": "ActiveStake",
+      "address": "stake_test1upxue2rk4tp0e3tp7l0nmfmj6ar7y9yvngzu0vn7fxs9ags2apttt",
+      "amount": "89492233056",
+      "epoch": {
+        "__typename": "Epoch",
+        "number": 31
+      },
+      "epochNo": 31,
+      "registeredWith": {
+        "__typename": "StakePool",
+        "hash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39"
+      },
+      "stakePoolHash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39",
+      "stakePoolId": "pool1mp96jpc2dtaruz0cazmljh03dev0969c4rq3wr6hnc4rjdxn8aw"
+    },
+    {
+      "__typename": "ActiveStake",
+      "address": "stake_test1upxue2rk4tp0e3tp7l0nmfmj6ar7y9yvngzu0vn7fxs9ags2apttt",
+      "amount": "139492233056",
+      "epoch": {
+        "__typename": "Epoch",
+        "number": 32
+      },
+      "epochNo": 32,
+      "registeredWith": {
+        "__typename": "StakePool",
+        "hash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39"
+      },
+      "stakePoolHash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39",
+      "stakePoolId": "pool1mp96jpc2dtaruz0cazmljh03dev0969c4rq3wr6hnc4rjdxn8aw"
+    },
+    {
+      "__typename": "ActiveStake",
+      "address": "stake_test1upxue2rk4tp0e3tp7l0nmfmj6ar7y9yvngzu0vn7fxs9ags2apttt",
+      "amount": "159882331900",
+      "epoch": {
+        "__typename": "Epoch",
+        "number": 33
+      },
+      "epochNo": 33,
+      "registeredWith": {
+        "__typename": "StakePool",
+        "hash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39"
+      },
+      "stakePoolHash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39",
+      "stakePoolId": "pool1mp96jpc2dtaruz0cazmljh03dev0969c4rq3wr6hnc4rjdxn8aw"
+    },
+    {
+      "__typename": "ActiveStake",
+      "address": "stake_test1upxue2rk4tp0e3tp7l0nmfmj6ar7y9yvngzu0vn7fxs9ags2apttt",
+      "amount": "200339823596",
+      "epoch": {
+        "__typename": "Epoch",
+        "number": 34
+      },
+      "epochNo": 34,
+      "registeredWith": {
+        "__typename": "StakePool",
+        "hash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39"
+      },
+      "stakePoolHash": "d84ba9070a6afa3e09f8e8b7f95df16e58f2e8b8a8c1170f579e2a39",
+      "stakePoolId": "pool1mp96jpc2dtaruz0cazmljh03dev0969c4rq3wr6hnc4rjdxn8aw"
+    }
+  ]
+}
