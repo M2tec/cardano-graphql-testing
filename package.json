@@ -22,7 +22,9 @@
   },
   "scripts": {
     "blockfrost": "node ./test/blockfrost/test.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "transform": "node ./test/compare/paymentAddress_new_to_blockfrost_format.js",
+    "compare": "diff ./test/compare/results/paymentAddress/ ./test/blockfrost/results/paymentAddress/"
   },
   "repository": {
     "type": "git",
