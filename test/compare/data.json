@@ -1,0 +1,68 @@
+{
+    "paymentAddresses": [
+        {
+            "__typename": "PaymentAddress",
+            "summary": {
+                "__typename": "PaymentAddressSummary",
+                "assetBalances": [
+                    {
+                        "__typename": "AssetBalance",
+                        "asset": {
+                            "__typename": "Asset",
+                            "assetId": null,
+                            "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+                            "name": "tADA",
+                            "assetName": null,
+                            "policyId": null
+                        },
+                        "quantity": "117126312014"
+                    },
+                    {
+                        "__typename": "AssetBalance",
+                        "asset": {
+                            "__typename": "Asset",
+                            "assetId": "06f25e8d1376360d8ad84ffc1add8c7808a62216b98866435eaf9d5ee50430e9569e8374cb58f418402a896a4875ca93c12f75c89a77423e4eab9cbf",
+                            "description": null,
+                            "name": null,
+                            "assetName": "e50430e9569e8374cb58f418402a896a4875ca93c12f75c89a77423e4eab9cbf",
+                            "policyId": "06f25e8d1376360d8ad84ffc1add8c7808a62216b98866435eaf9d5e"
+                        },
+                        "quantity": "1"
+                    },
+                    {
+                        "__typename": "AssetBalance",
+                        "asset": {
+                            "__typename": "Asset",
+                            "assetId": "0ed672eef8d5d58a6fbce91327baa25636a8ff97af513e3481c97c525468697349734f6e6553746172746572546f6b656e466f7254657374696e6734",
+                            "description": null,
+                            "name": null,
+                            "assetName": "5468697349734f6e6553746172746572546f6b656e466f7254657374696e6734",
+                            "policyId": "0ed672eef8d5d58a6fbce91327baa25636a8ff97af513e3481c97c52"
+                        },
+                        "quantity": "9223179036854380000"
+                    }
+                ]
+            },
+            "address": "addr_test1qqtu7g3e7pqwt9f4dqlkme9qj80cejr5v0jwugthywvgjyyxn4dgcgtv9swlj6snz3cdx59ru4u7mhrvg5rl50wunlls5z3e57"
+        }
+    ]
+}
+
+
+{
+    "address": "addr_test1qqtu7g3e7pqwt9f4dqlkme9qj80cejr5v0jwugthywvgjyyxn4dgcgtv9swlj6snz3cdx59ru4u7mhrvg5rl50wunlls5z3e57",
+    "amount": [
+        {
+            "unit": "lovelace",
+            "quantity": "117126312014"
+        },
+        {
+            "unit": "06f25e8d1376360d8ad84ffc1add8c7808a62216b98866435eaf9d5ee50430e9569e8374cb58f418402a896a4875ca93c12f75c89a77423e4eab9cbf",
+            "quantity": "1"
+        },
+        {
+            "unit": "0ed672eef8d5d58a6fbce91327baa25636a8ff97af513e3481c97c525468697349734f6e6553746172746572546f6b656e466f7254657374696e6734",
+            "quantity": "9223179036854380000"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "ada",
+              "description": null,
+              "name": "ada"
+            },
+            "quantity": "2941267063"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -197,8 +197,5 @@
       "unit": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303037333132",
       "quantity": "1"
     }
-  ],
-  "stake_address": null,
-  "type": "shelley",
-  "script": true
+  ]
 }

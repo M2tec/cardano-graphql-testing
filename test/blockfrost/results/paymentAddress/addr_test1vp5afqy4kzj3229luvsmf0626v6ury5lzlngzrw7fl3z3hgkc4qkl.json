@@ -17,8 +17,5 @@
       "unit": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb1741555448",
       "quantity": "918483"
     }
-  ],
-  "stake_address": null,
-  "type": "shelley",
-  "script": false
+  ]
 }

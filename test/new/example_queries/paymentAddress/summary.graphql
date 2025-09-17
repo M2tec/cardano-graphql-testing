@@ -16,19 +16,41 @@
 #   }
 # }
 
+# query paymentAddressSummay(
+#   $addresses: [String!]!
+# ) {
+#   paymentAddresses (addresses: $addresses) {
+#     summary {
+#       assetbalances {
+#         asset {
+#           assetId
+#           description
+#           name
+#         }
+#         quantity
+#       }
+#     }
+#   }
+# }
+
+
 query paymentAddressSummay(
   $addresses: [String!]!
 ) {
   paymentAddresses (addresses: $addresses) {
     summary {
-      assetbalances {
+      assetBalances {
         asset {
           assetId
           description
           name
+          assetName
+          policyId
         }
         quantity
       }
+      
     }
+    address
   }
 }

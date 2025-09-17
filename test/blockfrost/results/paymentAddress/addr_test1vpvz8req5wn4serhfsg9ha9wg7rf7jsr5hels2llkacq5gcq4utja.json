@@ -9,8 +9,5 @@
       "unit": "e68f1cea19752d1292b4be71b7f5d2b3219a15859c028f7454f66cdf74544555524f",
       "quantity": "99687000000000000000000"
     }
-  ],
-  "stake_address": null,
-  "type": "shelley",
-  "script": false
+  ]
 }

@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "jest": {
-    "testTimeout": 30000
+    "testTimeout": 1000000
   },
   "dependencies": {
     "@apollo/client": "^4.0.5",

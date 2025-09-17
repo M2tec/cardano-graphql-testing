@@ -1,0 +1,205 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+              "name": "tADA",
+              "assetName": null,
+              "policyId": null
+            },
+            "quantity": "102179702960"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "698a6ea0ca99f315034072af31eaac6ec11fe8558d3f48e9775aab9d7444524950",
+              "description": null,
+              "name": null,
+              "assetName": "7444524950",
+              "policyId": "698a6ea0ca99f315034072af31eaac6ec11fe8558d3f48e9775aab9d"
+            },
+            "quantity": "1415969"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653030313730",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653030313730",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb1741555448",
+              "description": null,
+              "name": null,
+              "assetName": "41555448",
+              "policyId": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb17"
+            },
+            "quantity": "67028"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653031383736",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653031383736",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653031393135",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653031393135",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653036313339",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653036313339",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653037323635",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653037323635",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653037353238",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653037353238",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653038373630",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653038373630",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653038383333",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653038383333",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653039333632",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653039333632",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653133353039",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e6550696f6e656572486f7273653133353039",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303032313330",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e65486f727365303032313330",
+              "policyId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303032313630",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e65486f727365303032313630",
+              "policyId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303032323830",
+              "description": null,
+              "name": null,
+              "assetName": "457175696e65486f727365303032323830",
+              "policyId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234"
+            },
+            "quantity": "1"
+          }
+        ]
+      },
+      "address": "addr_test1wppg9l6relcpls4u667twqyggkrpfrs5cdge9hhl9cv2upchtch0h"
+    }
+  ]
+}

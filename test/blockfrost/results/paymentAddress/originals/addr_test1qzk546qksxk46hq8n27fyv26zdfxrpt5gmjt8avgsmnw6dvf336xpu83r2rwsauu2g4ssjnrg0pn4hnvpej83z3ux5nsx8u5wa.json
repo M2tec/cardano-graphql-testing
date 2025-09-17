@@ -1,0 +1,20 @@
+{
+  "address": "addr_test1qzk546qksxk46hq8n27fyv26zdfxrpt5gmjt8avgsmnw6dvf336xpu83r2rwsauu2g4ssjnrg0pn4hnvpej83z3ux5nsx8u5wa",
+  "amount": [
+    {
+      "unit": "lovelace",
+      "quantity": "10025370801"
+    },
+    {
+      "unit": "2682a9b99553406c39f693bb450d6001954e3504c96238c6b96ad79a476c6f62616c20456e7465727461696e6d656e7420546f6b656e202847455429",
+      "quantity": "2003019023"
+    },
+    {
+      "unit": "45b40f949cf63b07d51d7addd6e6afa964ef324df221844fd65940a3474446",
+      "quantity": "500"
+    }
+  ],
+  "stake_address": "stake_test1uzyccarq7rc34phgw7w9y2cgff358se6mekquerc3g7r2fcktttr4",
+  "type": "shelley",
+  "script": false
+}
