@@ -13,37 +13,7 @@
               "description": null,
               "name": "ada"
             },
-            "quantity": "9000000"
-          },
-          {
-            "__typename": "AssetBalance",
-            "asset": {
-              "__typename": "Asset",
-              "assetId": "d50627ac7f0fced40943244aaa2b25b6abeb05a09ad69764280333ad01",
-              "description": null,
-              "name": null
-            },
-            "quantity": "2"
-          },
-          {
-            "__typename": "AssetBalance",
-            "asset": {
-              "__typename": "Asset",
-              "assetId": "5438685412dc5686b7298b208f4acf5a3c0c071fbf57494273522322",
-              "description": null,
-              "name": null
-            },
-            "quantity": "2"
-          },
-          {
-            "__typename": "AssetBalance",
-            "asset": {
-              "__typename": "Asset",
-              "assetId": "d50627ac7f0fced40943244aaa2b25b6abeb05a09ad69764280333ad00",
-              "description": null,
-              "name": null
-            },
-            "quantity": "2"
+            "quantity": "2941267063"
           }
         ]
       }

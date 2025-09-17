@@ -8,11 +8,13 @@ import gql from 'graphql-tag'
 import pRetry from 'p-retry'
 // const  pRetry = require('p-retry').default;
 
-import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/server';
+import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
 import fetch from 'cross-fetch'
 
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import { DocumentNode } from 'graphql'
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // import FailedAttemptError from 'p-retry'
 // import { dummyLogger, Logger } from 'ts-log'
@@ -27,7 +29,7 @@ import { DocumentNode } from 'graphql'
 //   }
 // }
 
-export type TestClient = ApolloClient
+
 
 export const testClient = {
   mainnet: buildClient.bind(this,
@@ -42,7 +44,7 @@ export const testClient = {
 }
 
 export  async function createTestApolloClient(
-  apiUri: string
+  apiUri
 )  {
 
     return new ApolloClient({
@@ -61,7 +63,7 @@ export  async function createTestApolloClient(
   };
 
 export async function buildClient (
-  apiUri: string
+  apiUri
 ) {
 
     console.log("apiUri: ", apiUri)
@@ -74,7 +76,7 @@ export async function buildClient (
             initialized
         }}`
       })
-      if ((result.data as any)?.cardanoDbMeta?.initialized === false) {
+      if ((result.data)?.cardanoDbMeta?.initialized === false) {
         console.log("Failure")
         throw new Error(`Cardano DB is not initialized: ${JSON.stringify(result.data)}`)
       } else {
@@ -88,11 +90,11 @@ export async function buildClient (
         retries: 9,
         // onFailedAttempt: onFailedAttemptFor('Cardano GraphQL Server readiness')
       })
-    await new Promise(res => setTimeout(res, 3500)) // wait 1s
+    await new Promise(res => setTimeout(res, 2500)) // wait 1s
     return client
   }
 
-export async function loadQueryNode (fileBasePath: string, name: string): Promise<DocumentNode> {
+export async function loadQueryNode (fileBasePath, name) {
 
     let queryPath = path.join(fileBasePath, `${name}.graphql`)
     // console.log(queryPath)
@@ -102,10 +104,10 @@ export async function loadQueryNode (fileBasePath: string, name: string): Promis
 
 
 export function saveResult(
-  data: any,
-  subdir: string = "orig",
-  subject: string = "standard",
-  filename: string = "result.json"
+  data,
+  subdir = "orig",
+  subject = "standard",
+  filename = "result.json"
 ) {
   const resultsDir = path.resolve(__dirname, subdir, "results", subject);
 
