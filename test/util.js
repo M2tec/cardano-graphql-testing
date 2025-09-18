@@ -123,4 +123,38 @@ export function saveResult(
   console.log(`✅ Result written to ${filePath}`);
 }
 
-export default { loadQueryNode, createTestApolloClient, saveResult }
+function graphqlToBlockfrost(graphqlResponse) {
+  if (!graphqlResponse.paymentAddresses || graphqlResponse.paymentAddresses.length === 0) {
+    return null; // no data
+  }
+
+  const payment = graphqlResponse.paymentAddresses[0]; // take the first address
+  const address = payment.address;
+
+  let amount = payment.summary.assetBalances.map(({ asset, quantity }) => {
+    if (!asset.assetId) {
+      // Native ADA (tADA -> lovelace)
+      return {
+        unit: "lovelace",
+        quantity
+      };
+    }
+
+    // Native asset: use assetId directly
+    return {
+      unit: asset.assetId,
+      quantity
+    };
+  });
+
+  // Sort: lovelace first, then rest alphabetically
+  amount.sort((a, b) => {
+    if (a.unit === "lovelace") return -1;
+    if (b.unit === "lovelace") return 1;
+    return a.unit.localeCompare(b.unit);
+  });
+
+  return { address, amount };
+}
+
+export default { loadQueryNode, createTestApolloClient, saveResult, graphqlToBlockfrost }

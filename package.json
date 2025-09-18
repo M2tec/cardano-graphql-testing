@@ -4,9 +4,6 @@
   "description": "",
   "type": "module",
   "main": "index.js",
-  "jest": {
-    "testTimeout": 1000000
-  },
   "dependencies": {
     "@apollo/client": "^4.0.5",
     "@blockfrost/blockfrost-js": "^6.0.0",
