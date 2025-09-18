@@ -1,0 +1,25 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+              "name": "tADA",
+              "assetName": null,
+              "policyId": null
+            },
+            "quantity": "8560000000"
+          }
+        ]
+      },
+      "address": "addr_test1wrpmuv762a326xhlywuvxh8c4wx60xmzmc894cpay2npj0creg3n8"
+    }
+  ]
+}

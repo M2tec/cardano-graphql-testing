@@ -1,0 +1,121 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+              "name": "tADA",
+              "assetName": null,
+              "policyId": null
+            },
+            "quantity": "264883834404108"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3744333",
+              "description": null,
+              "name": null,
+              "assetName": "744333",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "1972579685"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e374434f5049",
+              "description": null,
+              "name": null,
+              "assetName": "74434f5049",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "47820385152"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e374484f534b59",
+              "description": null,
+              "name": null,
+              "assetName": "74484f534b59",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "35787792483"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3744d454c44",
+              "description": null,
+              "name": null,
+              "assetName": "744d454c44",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "218534862576"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3744d494e",
+              "description": null,
+              "name": null,
+              "assetName": "744d494e",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "657569247770"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e374574d54",
+              "description": null,
+              "name": null,
+              "assetName": "74574d54",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "22137538203"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e374575254",
+              "description": null,
+              "name": null,
+              "assetName": "74575254",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "14278020656"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e37469555344",
+              "description": null,
+              "name": null,
+              "assetName": "7469555344",
+              "policyId": "f6f49b186751e61f1fb8c64e7504e771f968cea9f4d11f5222b169e3"
+            },
+            "quantity": "3060004718"
+          }
+        ]
+      },
+      "address": "addr_test1vzz67j06gu28pl5yje4jw683ft6np5cjqcux3frx6hcueyctfunr3"
+    }
+  ]
+}

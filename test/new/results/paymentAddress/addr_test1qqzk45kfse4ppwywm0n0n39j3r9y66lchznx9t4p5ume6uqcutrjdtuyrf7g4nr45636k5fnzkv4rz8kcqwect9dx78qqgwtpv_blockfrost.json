@@ -1,0 +1,12 @@
+{
+  "address": "addr_test1qqzk45kfse4ppwywm0n0n39j3r9y66lchznx9t4p5ume6uqcutrjdtuyrf7g4nr45636k5fnzkv4rz8kcqwect9dx78qqgwtpv",
+  "amount": [
+    {
+      "unit": "lovelace",
+      "quantity": "52035318620"
+    }
+  ],
+  "stake_address": "stake_test1uqvw93ex47zp5ly2e366dgat2ye3tx233rmvq8vu9jkn0rsaql0gg",
+  "type": "shelley",
+  "script": false
+}

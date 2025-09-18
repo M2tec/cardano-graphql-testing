@@ -157,4 +157,16 @@ function graphqlToBlockfrost(graphqlResponse) {
   return { address, amount };
 }
 
-export default { loadQueryNode, createTestApolloClient, saveResult, graphqlToBlockfrost }
+
+function blockfrostRemoveEnding(blockfrostData) {
+
+    // Remove unwanted properties
+    delete blockfrostData.stake_address;
+    delete blockfrostData.type;
+    delete blockfrostData.script;
+
+    return blockfrostData
+  }
+
+
+export default { loadQueryNode, createTestApolloClient, saveResult, graphqlToBlockfrost, blockfrostRemoveEnding }

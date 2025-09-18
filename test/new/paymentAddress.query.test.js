@@ -9,6 +9,8 @@ import { fileURLToPath } from 'node:url';
 
 import { BlockFrostAPI } from '@blockfrost/blockfrost-js';
 
+import DeepDiff from "deep-diff";
+
 const API = new BlockFrostAPI({
   projectId: "preprodreHl1IQCz3Jbnt3seOXd95c5Jxr9MEO7", 
 });
@@ -39,7 +41,7 @@ function loadTestOperationDocument(name) {
 
 
 let addresList
-const inputFile = path.join(__dirname, "../", "address_data_3.csv");
+const inputFile = path.join(__dirname, "../", "address_data_100.csv");
 
 addresList = fs
   .readFileSync(inputFile, "utf8")
@@ -102,7 +104,17 @@ describe('paymentAddress', () => {
 
       util.saveResult(blockfrostAddressData, "new", "paymentAddress", `${address}_blockfrost.json`);
       
-      
+      let blockfrostStripped = util.blockfrostRemoveEnding(blockfrostAddressData)
+
+      util.saveResult(blockfrostStripped, "new", "paymentAddress", `${address}_blockfrost_stripped.json`);
+
+      const differences = DeepDiff.diff(gqlBlockfrostData, blockfrostAddressData);
+
+      console.log(differences);
+
+      if (differences) {
+        util.saveResult(blockfrostStripped, "new", "paymentAddress", `${address}_differences.json`);
+      }
 
       // const paymentAddress = result.data.paymentAddresses[0]
       // expect(paymentAddress.summary.assetBalances[0].asset.assetId).toBeDefined()

@@ -1,0 +1,17 @@
+{
+  "address": "addr_test1wqehl6d99jcr6y80vnwp3ac94gp30ksm5vfyryt6ysy9pyggky5ra",
+  "amount": [
+    {
+      "unit": "lovelace",
+      "quantity": "8515482500"
+    },
+    {
+      "unit": "63643f6b606aa025ab52a87194b683540654781973128750d2d66597",
+      "quantity": "500000"
+    },
+    {
+      "unit": "871d1afe81df79665bf632855d0dacddae35a22539f2dd9ad7e8fd5f",
+      "quantity": "4595"
+    }
+  ]
+}

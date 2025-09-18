@@ -1,0 +1,133 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+              "name": "tADA",
+              "assetName": null,
+              "policyId": null
+            },
+            "quantity": "24127244702"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "602866d30452bf3ea0af2d6b4007389eed5542d2572808cba3eb991f746f6b656e41",
+              "description": null,
+              "name": null,
+              "assetName": "746f6b656e41",
+              "policyId": "602866d30452bf3ea0af2d6b4007389eed5542d2572808cba3eb991f"
+            },
+            "quantity": "11"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "af6c50cb85c8df17f539437c01b405ab9b62b03140d872e787d7a279746f6b656e42",
+              "description": null,
+              "name": null,
+              "assetName": "746f6b656e42",
+              "policyId": "af6c50cb85c8df17f539437c01b405ab9b62b03140d872e787d7a279"
+            },
+            "quantity": "624612"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "c0e92e5ed7e61c6be2e4c44d1b7568c23a102ffbb7ba7f43bea06c23426f72726f776572",
+              "description": null,
+              "name": null,
+              "assetName": "426f72726f776572",
+              "policyId": "c0e92e5ed7e61c6be2e4c44d1b7568c23a102ffbb7ba7f43bea06c23"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "c0e92e5ed7e61c6be2e4c44d1b7568c23a102ffbb7ba7f43bea06c234c656e646572",
+              "description": null,
+              "name": null,
+              "assetName": "4c656e646572",
+              "policyId": "c0e92e5ed7e61c6be2e4c44d1b7568c23a102ffbb7ba7f43bea06c23"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "d635da00e7fa78c1a0bf5153e2daccada00abb4e19a5272f1ecc84ab4275796572",
+              "description": null,
+              "name": null,
+              "assetName": "4275796572",
+              "policyId": "d635da00e7fa78c1a0bf5153e2daccada00abb4e19a5272f1ecc84ab"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "d635da00e7fa78c1a0bf5153e2daccada00abb4e19a5272f1ecc84ab4d65646961746f72",
+              "description": null,
+              "name": null,
+              "assetName": "4d65646961746f72",
+              "policyId": "d635da00e7fa78c1a0bf5153e2daccada00abb4e19a5272f1ecc84ab"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "d635da00e7fa78c1a0bf5153e2daccada00abb4e19a5272f1ecc84ab53656c6c6572",
+              "description": null,
+              "name": null,
+              "assetName": "53656c6c6572",
+              "policyId": "d635da00e7fa78c1a0bf5153e2daccada00abb4e19a5272f1ecc84ab"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "8c6ca20056f6638e3838f8f7dcaf83bfe7b002cc23070e6cb137b278426f72726f776572",
+              "description": null,
+              "name": null,
+              "assetName": "426f72726f776572",
+              "policyId": "8c6ca20056f6638e3838f8f7dcaf83bfe7b002cc23070e6cb137b278"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "8c6ca20056f6638e3838f8f7dcaf83bfe7b002cc23070e6cb137b2784c656e646572",
+              "description": null,
+              "name": null,
+              "assetName": "4c656e646572",
+              "policyId": "8c6ca20056f6638e3838f8f7dcaf83bfe7b002cc23070e6cb137b278"
+            },
+            "quantity": "1"
+          }
+        ]
+      },
+      "address": "addr_test1vz5e2ytyca8su8jzjyuwsllf7r562r9mxaleuttt63mt84g4g55tq"
+    }
+  ]
+}

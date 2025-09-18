@@ -1,0 +1,61 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+              "name": "tADA",
+              "assetName": null,
+              "policyId": null
+            },
+            "quantity": "53803222234"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "698a6ea0ca99f315034072af31eaac6ec11fe8558d3f48e9775aab9d7444524950",
+              "description": null,
+              "name": null,
+              "assetName": "7444524950",
+              "policyId": "698a6ea0ca99f315034072af31eaac6ec11fe8558d3f48e9775aab9d"
+            },
+            "quantity": "1159565"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb1741555448",
+              "description": null,
+              "name": null,
+              "assetName": "41555448",
+              "policyId": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb17"
+            },
+            "quantity": "918483"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "2e9194a7361f1b619ca02674ec06d81414b9bfdce399b65c5e2e6ad341555448",
+              "description": null,
+              "name": null,
+              "assetName": "41555448",
+              "policyId": "2e9194a7361f1b619ca02674ec06d81414b9bfdce399b65c5e2e6ad3"
+            },
+            "quantity": "85729"
+          }
+        ]
+      },
+      "address": "addr_test1vp5afqy4kzj3229luvsmf0626v6ury5lzlngzrw7fl3z3hgkc4qkl"
+    }
+  ]
+}

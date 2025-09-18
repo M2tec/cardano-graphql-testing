@@ -1,0 +1,9 @@
+{
+  "address": "addr_test1qphjc9jmlw0z3gcnmgpd8902let7uyyphv2t374vrpttq3eeq7e2wq4xmngdjd75e0wja2xmgmpnt7wxnq8wjwcwaxeszgcywl",
+  "amount": [
+    {
+      "unit": "lovelace",
+      "quantity": "15239084968"
+    }
+  ]
+}

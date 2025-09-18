@@ -8,6 +8,7 @@
     "@apollo/client": "^4.0.5",
     "@blockfrost/blockfrost-js": "^6.0.0",
     "cross-fetch": "^4.1.0",
+    "deep-diff": "^1.0.2",
     "graphql-tag": "^2.12.6",
     "p-retry": "^4.6.2"
   },

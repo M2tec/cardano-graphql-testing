@@ -1,0 +1,61 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+              "name": "tADA",
+              "assetName": null,
+              "policyId": null
+            },
+            "quantity": "18537192878"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "d681b680bad84ff374a2c0655fae3eaf036024e306ec035e3aad0536567946695f4144412f565946495f4c50",
+              "description": null,
+              "name": null,
+              "assetName": "567946695f4144412f565946495f4c50",
+              "policyId": "d681b680bad84ff374a2c0655fae3eaf036024e306ec035e3aad0536"
+            },
+            "quantity": "5943484094"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "3e44171e54cb28996b8d1e1893123e27e5f31d9518db5526833cedf541584f53",
+              "description": null,
+              "name": null,
+              "assetName": "41584f53",
+              "policyId": "3e44171e54cb28996b8d1e1893123e27e5f31d9518db5526833cedf5"
+            },
+            "quantity": "2"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "bf7bcdc2020c159250c6875d0a78a5c562ccd4b2d292c079f71e45c541584f53",
+              "description": null,
+              "name": null,
+              "assetName": "41584f53",
+              "policyId": "bf7bcdc2020c159250c6875d0a78a5c562ccd4b2d292c079f71e45c5"
+            },
+            "quantity": "2"
+          }
+        ]
+      },
+      "address": "addr_test1qqyksydppt0pwl9kuskkkpd04h9c2gtcwfm6nxvqsc7f24vs0su0ywv0773xlv6xzl4tlpk5nfldlqxcc7rs5rg6zdgsgl75jm"
+    }
+  ]
+}
