@@ -1,0 +1,35 @@
+fragment _PaymentAddresses on Query {
+  paymentAddresses(addresses: $addresses) {
+    summary {
+      assetBalances {
+        asset {
+          assetId
+          policyId
+          assetName
+          fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+  __typename
+}
+fragment _GetTip on Query {
+  cardano {
+    tip {
+      slotNo
+    }
+    __typename
+  }
+  __typename
+}
+query PaymentAddresses($addresses: [String]!) {
+  ..._PaymentAddresses
+  ..._GetTip
+}
+
+

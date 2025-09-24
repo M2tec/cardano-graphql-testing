@@ -1,0 +1,198 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "policyId": null,
+              "assetName": null,
+              "fingerprint": null
+            },
+            "quantity": "102179702960"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653031383736",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653031383736",
+              "fingerprint": "asset1ltnl8fgqlvqvdlslk8pfmupdfuqetzfxe85dlg"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653031393135",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653031393135",
+              "fingerprint": "asset1pa2npspyp8snjr0va8qd909r4nt5jw9hxu30wg"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653036313339",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653036313339",
+              "fingerprint": "asset1nucl09282jcksed7ymvk40tvq6z2mndywqup5x"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653037323635",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653037323635",
+              "fingerprint": "asset1la7fqyxau2fz920qwslm47q4xu42a80y2x5kgn"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653037353238",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653037353238",
+              "fingerprint": "asset1srttw29gwz8yqy9tjh5ckf234wgp9vm62rvkj4"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653038373630",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653038373630",
+              "fingerprint": "asset10eea8k7acj5d929akp28t67ccglu8sm4xet5zm"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653038383333",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653038383333",
+              "fingerprint": "asset1m45dcwwp5z7zrtfygfw53yrdmsvu2santjes5u"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653039333632",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653039333632",
+              "fingerprint": "asset1hyjqr5xal3zk43zknpkwce4h8vnntjz4pexk86"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653133353039",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653133353039",
+              "fingerprint": "asset10kvr2qev736xjmdtvpe3whmdewymgvfn48ygqr"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303032313330",
+              "policyId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234",
+              "assetName": "457175696e65486f727365303032313330",
+              "fingerprint": "asset12g0kdl6yum5nfy47r75k45qryl26qjwm9p70qt"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303032313630",
+              "policyId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234",
+              "assetName": "457175696e65486f727365303032313630",
+              "fingerprint": "asset1tf2lu8eepjd5aqxeh6zrg8expmrfjvplwzpvv2"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234457175696e65486f727365303032323830",
+              "policyId": "849e6eb84653626eb800bb2fcfe95c4d5ba9f8f3061d9973614be234",
+              "assetName": "457175696e65486f727365303032323830",
+              "fingerprint": "asset18rue2zj3tsaqm9yvreh74ms8e02wld3hwevhax"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "698a6ea0ca99f315034072af31eaac6ec11fe8558d3f48e9775aab9d7444524950",
+              "policyId": "698a6ea0ca99f315034072af31eaac6ec11fe8558d3f48e9775aab9d",
+              "assetName": "7444524950",
+              "fingerprint": "asset1nvcwnq60jnm27efjm87xnhqt6alsv024tdyxjm"
+            },
+            "quantity": "1415969"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4457175696e6550696f6e656572486f7273653030313730",
+              "policyId": "f8b0701b14c4e588a0f68e45d91d501c62580887dc1cc863d6c0d8b4",
+              "assetName": "457175696e6550696f6e656572486f7273653030313730",
+              "fingerprint": "asset1d7mxzh2xg04k8cf5wqxh5sa84sq2mpktyfrzvk"
+            },
+            "quantity": "1"
+          },
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb1741555448",
+              "policyId": "c2ecc337337cf48720e3747c833c9c179e08d2ea235d9bee7afbcb17",
+              "assetName": "41555448",
+              "fingerprint": "asset19cm5q9wxmc3rt04m6q474eyvhkhpz50x2h9m8k"
+            },
+            "quantity": "67028"
+          }
+        ]
+      }
+    }
+  ],
+  "__typename": "Query",
+  "cardano": [
+    {
+      "__typename": "Cardano",
+      "tip": {
+        "__typename": "Block",
+        "slotNo": "103046724"
+      }
+    }
+  ]
+}

@@ -161,6 +161,7 @@ function graphqlToBlockfrost(graphqlResponse) {
 function blockfrostRemoveEnding(blockfrostData) {
 
     // Remove unwanted properties
+    delete blockfrostData.address
     delete blockfrostData.stake_address;
     delete blockfrostData.type;
     delete blockfrostData.script;

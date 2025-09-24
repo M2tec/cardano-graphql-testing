@@ -1,0 +1,33 @@
+{
+  "paymentAddresses": [
+    {
+      "__typename": "PaymentAddress",
+      "summary": {
+        "__typename": "PaymentAddressSummary",
+        "assetBalances": [
+          {
+            "__typename": "AssetBalance",
+            "asset": {
+              "__typename": "Asset",
+              "assetId": null,
+              "policyId": null,
+              "assetName": null,
+              "fingerprint": null
+            },
+            "quantity": "516258237259"
+          }
+        ]
+      }
+    }
+  ],
+  "__typename": "Query",
+  "cardano": [
+    {
+      "__typename": "Cardano",
+      "tip": {
+        "__typename": "Block",
+        "slotNo": "103046734"
+      }
+    }
+  ]
+}
