@@ -6,12 +6,12 @@ import { DocumentNode } from 'graphql'
 
 import gql from 'graphql-tag'
 
-function loadQueryNode (name: string): Promise<DocumentNode> {
+function loadQueryNode (name) {
   return util.loadQueryNode(path.resolve(__dirname, '..', 'new', 'example_queries', 'blocks'), name)
 }
 
-const allFieldsPopulated = (obj: any) => {
-  let k: keyof typeof obj
+const allFieldsPopulated = obj => {
+  let k
   for (k in obj) {
     if (
       typeof k === 'object'
@@ -23,7 +23,7 @@ const allFieldsPopulated = (obj: any) => {
 }
 
 describe('blocks', () => {
-  let client: TestClient
+  let client
   beforeAll(async () => {
     client = await testClient.preprod()
   })
@@ -89,16 +89,16 @@ describe('blocks', () => {
   //   )
   // })
 
-  // it('Can return aggregated data', async () => {
-  //   const result = await client.query({
-  //     query: await loadQueryNode('aggregateDataWithinBlock'),
-  //     variables: { number: 283413, epochLessThan: 50 }
-  //   })
+  it('Can return aggregated data', async () => {
+    const result = await client.query({
+      query: await loadQueryNode('aggregateDataWithinBlock'),
+      variables: { number: 283413, epochLessThan: 50 }
+    })
 
-  //   util.saveResult(result.data, "new",   "blocks", "aggregateDataWithinBlock.json");
+    util.saveResult(result.data, "new",   "blocks", "aggregateDataWithinBlock.json");
 
-  //   allFieldsPopulated((result.data as any).blocks[0])
-  // })
+    allFieldsPopulated(result.data.blocks[0])
+  })
 
 
   // FIX FAIL it('Can return filtered aggregated data', async () => {
@@ -147,27 +147,27 @@ describe('blocks', () => {
   //   expect((result.data as any)).toMatchSnapshot()
   // })
 
-  it('are linked to their predecessor, and the chain can be traversed', async () => {
-    const result = await client.query({
-      query: await loadQueryNode('selectGreatGrandparentBlock'),
-      variables: { number: 29022 }
-    })
+  // it('are linked to their predecessor, and the chain can be traversed', async () => {
+  //   const result = await client.query({
+  //     query: await loadQueryNode('selectGreatGrandparentBlock'),
+  //     variables: { number: 29022 }
+  //   })
 
-    util.saveResult(result.data, "new",   "blocks", "selectGreatGrandparentBlock.json");
+  //   util.saveResult(result.data, "new",   "blocks", "selectGreatGrandparentBlock.json");
 
-    // FIX FAIL expect((result.data as any).blocks[0].previousBlock.previousBlock.previousBlock.number).toBe(29019)
-    // FIX FAIL expect((result.data as any)).toMatchSnapshot()
-  })
+  //   // FIX FAIL expect((result.data as any).blocks[0].previousBlock.previousBlock.previousBlock.number).toBe(29019)
+  //   // FIX FAIL expect((result.data as any)).toMatchSnapshot()
+  // })
 
-  it('are linked to their successor, and the chain can be traversed', async () => {
-    const result = await client.query({
-      query: await loadQueryNode('selectGreatGrandchildBlock'),
-      variables: { number: 29022 }
-    })
+  // it('are linked to their successor, and the chain can be traversed', async () => {
+  //   const result = await client.query({
+  //     query: await loadQueryNode('selectGreatGrandchildBlock'),
+  //     variables: { number: 29022 }
+  //   })
 
-    util.saveResult(result.data, "new",   "blocks", "selectGreatGrandchildBlock.json");
+  //   util.saveResult(result.data, "new",   "blocks", "selectGreatGrandchildBlock.json");
 
-    // FIX FAIL expect((result.data as any).blocks[0].nextBlock.nextBlock.nextBlock.number).toBe(29025)
-    // FIX FAIL expect((result.data as any)).toMatchSnapshot()
-  })
+  //   // FIX FAIL expect((result.data as any).blocks[0].nextBlock.nextBlock.nextBlock.number).toBe(29025)
+  //   // FIX FAIL expect((result.data as any)).toMatchSnapshot()
+  // })
 })

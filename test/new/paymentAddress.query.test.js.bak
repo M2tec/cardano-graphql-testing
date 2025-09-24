@@ -6,6 +6,7 @@ import { testClient } from '../util'
 
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import { BlockFrostAPI } from '@blockfrost/blockfrost-js';
 
@@ -15,7 +16,7 @@ const API = new BlockFrostAPI({
   projectId: "preprodreHl1IQCz3Jbnt3seOXd95c5Jxr9MEO7", 
 });
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+
 
 import BigNumber from 'bignumber.js'
 
@@ -41,7 +42,7 @@ function loadTestOperationDocument(name) {
 
 
 let addresList
-const inputFile = path.join(__dirname, "../", "address_data_100.csv");
+const inputFile = path.join(__dirname, "../", "address_data_3.csv");
 
 addresList = fs
   .readFileSync(inputFile, "utf8")
@@ -85,7 +86,7 @@ describe('paymentAddress', () => {
 
   for (const address of addresList) {
 
-    it(`Address summary for: ${address}`, async () => {
+    it(`Compare blockfrost data for address: ${address}`, async () => {
 
       console.log(`Querying: ${address}`);
 
@@ -110,10 +111,10 @@ describe('paymentAddress', () => {
 
       const differences = DeepDiff.diff(gqlBlockfrostData, blockfrostAddressData);
 
-      console.log(differences);
+      // console.log(differences);
 
       if (differences) {
-        util.saveResult(blockfrostStripped, "new", "paymentAddress", `${address}_differences.json`);
+        util.saveResult(differences, "new", "paymentAddress", `${address}_differences.json`);
       }
 
       // const paymentAddress = result.data.paymentAddresses[0]

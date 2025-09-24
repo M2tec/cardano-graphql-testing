@@ -69,7 +69,7 @@ query assets (
 
         tokenMints_aggregate {
             aggregate {
-                # count
+                count
                 sum {
                     quantity
                 }
@@ -81,7 +81,7 @@ query assets (
     assets_aggregate {
         aggregate {
             sum { decimals }
-            # count
+            count
         }
     }
 }

@@ -2,6 +2,30 @@
   "assets": [
     {
       "__typename": "Asset",
+      "assetId": null,
+      "assetName": null,
+      "decimals": 6,
+      "description": "The official coin of Cardano Blockchain for Pre-Production Network",
+      "fingerprint": null,
+      "logo": null,
+      "name": "tADA",
+      "ticker": "tADA",
+      "tokenMints": [],
+      "tokenMints_aggregate": {
+        "__typename": "TokenMintsAggregate",
+        "aggregate": {
+          "__typename": "TokenMintAggregates",
+          "sum": {
+            "__typename": "TokenMintSumAggregates",
+            "quantity": "0"
+          }
+        }
+      },
+      "url": null,
+      "policyId": null
+    },
+    {
+      "__typename": "Asset",
       "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb33799953554d4d495441574152445344656669",
       "assetName": "53554d4d495441574152445344656669",
       "decimals": null,
@@ -48,47 +72,6 @@
       },
       "url": null,
       "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999"
-    },
-    {
-      "__typename": "Asset",
-      "assetId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999436f696e41",
-      "assetName": "436f696e41",
-      "decimals": null,
-      "description": null,
-      "fingerprint": "asset1u22slc95y2x5g7r38v3eaw705healz6x2skvr8",
-      "logo": null,
-      "name": null,
-      "ticker": null,
-      "tokenMints": [
-        {
-          "__typename": "TokenMint",
-          "quantity": "1",
-          "transaction": {
-            "__typename": "Transaction",
-            "hash": "e5793239dd16b797cf0984bf992f0c21ffd5e70ccbc6e4ab89a0f471be2cbbed"
-          }
-        },
-        {
-          "__typename": "TokenMint",
-          "quantity": "-1",
-          "transaction": {
-            "__typename": "Transaction",
-            "hash": "890472618e16a09d9ce6bc048378be0150ff8848c04069f24ec60290aace48d1"
-          }
-        }
-      ],
-      "tokenMints_aggregate": {
-        "__typename": "TokenMintsAggregate",
-        "aggregate": {
-          "__typename": "TokenMintAggregates",
-          "sum": {
-            "__typename": "TokenMintSumAggregates",
-            "quantity": "0"
-          }
-        }
-      },
-      "url": null,
-      "policyId": "e2bab64ca481afc5a695b7db22fd0a7df4bf930158dfa652fb337999"
     }
   ],
   "assets_aggregate": {
@@ -97,7 +80,7 @@
       "__typename": "AssetAggregates",
       "sum": {
         "__typename": "AssetSumAggregates",
-        "decimals": "0"
+        "decimals": "6"
       }
     }
   }
