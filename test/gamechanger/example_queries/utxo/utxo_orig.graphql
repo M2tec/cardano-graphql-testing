@@ -34,7 +34,7 @@
   fragment _GetProtocolParams on Query {
     epochs(
       limit:1
-      order_by: [NUMBER_DESC]
+      order_by:{number:desc}
     ){
       number
       protocolParams{
