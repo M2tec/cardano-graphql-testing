@@ -1,0 +1,67 @@
+
+  query GetAssets(
+    #$limit: Int
+    #$order_by: [Asset_order_by!]
+    #$offset: Int
+    $where: Asset_bool_exp
+  ) {
+  assets(
+    #limit:$limit
+    #order_by:$order_by
+    #offset:$offset
+    where:$where
+  ){
+    assetId
+    assetName
+    policyId
+    fingerprint
+    # description
+    # logo
+    # metadataHash
+    # name
+    # ticker
+    # url
+    # decimals
+
+    tokenMints_aggregate{
+      aggregate{
+        sum{
+          quantity
+        }
+        count
+      }
+    }
+
+    
+tokenMints(limit:1,offset:0,order_by:{transaction:{block:{forgedAt:desc}}}){
+    transaction{
+        metadata{
+          key
+          value
+        }
+    }
+  }
+
+    
+  }
+  }
+  
+
+#   {
+# 	"variables": {
+# 		"where": {
+# 			"fingerprint": {
+# 				"_in": [
+# 					"asset1tsjrncfc92wsyc2hee2w0wpve6l5pqcf62dqdf",
+# 					"asset189sq3uvt2zrv238knkhjfxct40r3vurmk0dfuc",
+# 					"asset1sgmyd0my0madhqm87jxk7aesearex0j587s490",
+# 					"asset10m73lulft4w2h0sjnx3qn92rap48qyn8hzp4l9",
+# 					"asset1ge07knf9apppncvtqtuteta3nlmkn5s6y3nfa4",
+# 					"asset1t56ejjnl4lwd4l35h69965c806p53rqprztf9x",
+# 					"asset1gna02j50ysnz5uultuyejvdw0y5q3cdf55xkjn",
+# 					"ada.ada"
+# 				]
+# 			}
+# 		}
+# 	}
+# }

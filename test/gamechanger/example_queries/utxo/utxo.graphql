@@ -1,0 +1,106 @@
+
+
+  
+  fragment _UTXOs on Query {
+    utxos(
+      #distinct_on:$distinct_on
+      #limit:$limit
+      #order_by:$order_by
+      #offset:$offset
+      where:$where
+    ){
+      
+  txHash
+  address
+  index
+  #transaction
+  tokens{
+    quantity
+    asset{
+      
+  assetId
+  assetName
+  fingerprint
+  policyId
+  # name
+
+    }
+  }
+  value
+               
+    }
+  }
+    
+  fragment _GetProtocolParams on Query {
+    epochs(
+      limit:1
+      order_by:{number:desc}
+    ){
+      number
+      protocolParams{
+        coinsPerUtxoByte
+      }
+    }
+    genesis{
+        alonzo{
+            maxValueSize
+            lovelacePerUTxOWord
+            
+            executionPrices{
+              prSteps {numerator denominator}
+              prMem  {numerator denominator}
+            }
+            maxTxExUnits{
+              exUnitsMem
+              exUnitsSteps
+            }
+            maxBlockExUnits{
+              exUnitsMem
+              exUnitsSteps
+            }
+            collateralPercentage
+            maxCollateralInputs
+
+        }
+        shelley{
+            protocolParams{
+                poolDeposit
+                keyDeposit
+                minUTxOValue
+                minFeeA
+                minFeeB
+                maxTxSize
+            }  
+        }
+    }
+  }
+
+  fragment _GetTip on Query {
+    cardano {
+      tip {
+        number
+        slotNo
+        slotInEpoch
+        epochNo
+        forgedAt
+      }
+    }
+  }
+  
+  query PaymentAddresses($where: TransactionOutput_bool_exp){
+            
+    ..._GetTip
+    ..._GetProtocolParams
+    ..._UTXOs
+  }
+  
+
+#   {
+# 	"variables": {
+# 		"where": {
+# 			"address": {
+# 				"_eq": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p"
+# 			}
+# 		}
+# 	}
+# }

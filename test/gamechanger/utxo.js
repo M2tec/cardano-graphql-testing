@@ -22,7 +22,7 @@ import BigNumber from 'bignumber.js'
 
 
 function loadQueryNode(name) {
-  return util.loadQueryNode(path.resolve(__dirname, '..', 'gamechanger', 'example_queries', 'transactions'), name)
+  return util.loadQueryNode(path.resolve(__dirname, '..', 'gamechanger', 'example_queries', 'utxo'), name)
 }
 
 function loadTestOperationDocument(name) {
@@ -85,7 +85,7 @@ describe('transactions', () => {
       //   util.saveResult(differences, "gamechanger", "paymentAddress", `${address}_differences.json`);
       // }
 
-      const blockfrostTransactionData = await API.addressesTransactions(address);;
+      const blockfrostTransactionData = await API.addressesTransactions(address);
 
       util.saveResult(blockfrostTransactionData, "gamechanger", "transactions", `${address}_blockfrost.json`);
 

@@ -1,0 +1,23 @@
+
+  
+  query GetUTXOList{
+    
+      utxo_7b367e9c2b5b1e62e798bdeea6f8d1b47b987b0dcb514c3ac28bf4c7c94b30ff_3:utxos(
+        where:{index:{_eq:3},transaction:{hash:{_eq:"7b367e9c2b5b1e62e798bdeea6f8d1b47b987b0dcb514c3ac28bf4c7c94b30ff"}}},      	      
+      ){
+          value
+          address
+          txHash
+          index
+          tokens{          
+            quantity
+            asset{
+              fingerprint
+              policyId
+              assetName
+            }
+          }
+        }
+        
+  }
+  

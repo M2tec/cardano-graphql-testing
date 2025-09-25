@@ -1,0 +1,22 @@
+
+query GetLastVoteDelegations($stakeAddress: String!, $limit: Int!) {
+  delegationVotes(
+    limit: $limit,
+    where: { address: { _eq: $stakeAddress } },
+    order_by: { transaction: { block: { slotNo: desc_nulls_last } } }
+  ) {
+    address
+    drep {
+      raw
+      view
+      has_script
+    }
+  }
+}
+
+{
+	"variables": {
+		"limit": 1,
+		"stakeAddress": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+	}
+}

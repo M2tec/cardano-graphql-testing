@@ -1,0 +1,134 @@
+
+  query GetLastDelegations(
+    #$distinct_on: [Delegation_distinct_on!]
+    #$limit: Int
+    #$order_by: [Delegation_order_by!]
+    #$offset: Int
+    $where_delegations: Delegation_bool_exp
+    $where_rewards_aggregate: Reward_bool_exp
+    $where_withdrawals_aggregate: Withdrawal_bool_exp
+    $where_activeStake: ActiveStake_bool_exp
+    $where_stakeRegistrations:StakeRegistration_bool_exp
+    $where_stakeDeregistrations:StakeDeregistration_bool_exp
+  ) {
+      
+
+    rewards_aggregate(    
+      where:$where_rewards_aggregate
+    ){    
+      aggregate{
+        sum{
+          amount
+        }
+        count
+      }    
+    }
+    
+    withdrawals_aggregate(    
+      where:$where_withdrawals_aggregate
+    ){    
+      aggregate{
+        sum{
+          amount
+        }
+        count
+      }    
+    }
+
+    activeStake(    
+    	limit:1,
+      order_by:{epochNo:desc}      
+      where:$where_activeStake
+    ){    
+      amount 
+      registeredWith{
+        hash
+        #url
+        id
+      }      
+    }
+
+    stakeRegistrations(
+      limit:1
+      order_by:{transaction:{block:{slotNo:desc_nulls_last}}}
+      where:$where_stakeRegistrations    
+    ){
+      transaction{
+        block{
+          slotNo
+          epochNo
+        }
+      }    
+    }
+
+    stakeDeregistrations(
+      limit:1
+      order_by:{transaction:{block:{slotNo:desc_nulls_last}}}
+      where:$where_stakeDeregistrations    
+    ){
+      transaction{
+        block{
+          slotNo
+          epochNo
+        }
+      }    
+    }
+
+    delegations(
+      #distinct_on:$distinct_on
+      limit:1
+      order_by:{transaction:{block:{slotNo:desc_nulls_last}}}        
+      where:$where_delegations
+    ){          
+      transaction{
+        block{          
+          slotNo
+          epochNo
+        }
+      }
+      address
+      stakePool{
+        id
+        hash
+        #url
+      }
+    }
+
+
+  }    
+  
+
+#   {
+# 	"variables": {
+# 		"where_activeStake": {
+# 			"address": {
+# 				"_eq": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+# 			}
+# 		},
+# 		"where_delegations": {
+# 			"address": {
+# 				"_eq": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+# 			}
+# 		},
+# 		"where_rewards_aggregate": {
+# 			"address": {
+# 				"_eq": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+# 			}
+# 		},
+# 		"where_stakeDeregistrations": {
+# 			"address": {
+# 				"_eq": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+# 			}
+# 		},
+# 		"where_stakeRegistrations": {
+# 			"address": {
+# 				"_eq": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+# 			}
+# 		},
+# 		"where_withdrawals_aggregate": {
+# 			"address": {
+# 				"_eq": "stake_test1uzk97y4lqr6jh5r7neqdy6lgzrlyxgvn4x7emutexfyc7vq9uvenc"
+# 			}
+# 		}
+# 	}
+# }

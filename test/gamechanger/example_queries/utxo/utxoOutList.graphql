@@ -1,0 +1,81 @@
+query TxOutList{    
+          
+    transaction_4e71de82b3c4d5b0175fce9da372605788f5bcc2ea2d30f447b0c6bc1dafb22d:transactions(
+      limit: 1      
+      offset: 0
+      where: {hash:{_eq:"4e71de82b3c4d5b0175fce9da372605788f5bcc2ea2d30f447b0c6bc1dafb22d"}}
+    )
+    {        
+      outputs(
+        where:{index:{_in:[0]}}
+        order_by:{index:asc}
+      ){          
+        index
+        txHash        
+        address
+        
+        tokens{          
+          quantity
+          asset{
+            fingerprint
+            policyId
+            assetName
+          }
+        }
+        value
+      }
+    }      
+  ,      
+    transaction_7e5ff591349dfb9d52c84839230699a5f495da38389d6c5170fd89c4e13a0898:transactions(
+      limit: 1      
+      offset: 0
+      where: {hash:{_eq:"7e5ff591349dfb9d52c84839230699a5f495da38389d6c5170fd89c4e13a0898"}}
+    )
+    {        
+      outputs(
+        where:{index:{_in:[2]}}
+        order_by:{index:asc}
+      ){          
+        index
+        txHash        
+        address
+        
+        tokens{          
+          quantity
+          asset{
+            fingerprint
+            policyId
+            assetName
+          }
+        }
+        value
+      }
+    }      
+  ,      
+    transaction_1b40cebf34d041bbbc44575b957bdd67546247d245fa43b10394c344caabff7e:transactions(
+      limit: 1      
+      offset: 0
+      where: {hash:{_eq:"1b40cebf34d041bbbc44575b957bdd67546247d245fa43b10394c344caabff7e"}}
+    )
+    {        
+      outputs(
+        where:{index:{_in:[2]}}
+        order_by:{index:asc}
+      ){          
+        index
+        txHash        
+        address
+        
+        tokens{          
+          quantity
+          asset{
+            fingerprint
+            policyId
+            assetName
+          }
+        }
+        value
+      }
+    }      
+  
+  }
