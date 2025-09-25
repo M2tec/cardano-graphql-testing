@@ -85,7 +85,7 @@ describe('transactions', () => {
       //   util.saveResult(differences, "gamechanger", "paymentAddress", `${address}_differences.json`);
       // }
 
-      const blockfrostTransactionData = await API.addressesTransactions(address);;
+      const blockfrostTransactionData = await API.addressesTransactions(address);
 
       util.saveResult(blockfrostTransactionData, "gamechanger", "transactions", `${address}_blockfrost.json`);
 

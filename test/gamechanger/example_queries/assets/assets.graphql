@@ -28,12 +28,13 @@
         sum{
           quantity
         }
-        count
+        # count
       }
     }
 
     
-tokenMints(limit:1,offset:0,order_by:{transaction:{block:{forgedAt:desc}}}){
+# tokenMints(limit:1,offset:0,order_by:{transaction:{block:{forgedAt:desc}}}){
+tokenMints(limit:1,offset:0){
     transaction{
         metadata{
           key
