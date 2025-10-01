@@ -23,7 +23,7 @@ fragment _GetTransactions on Query {
           assetId
           policyId
           assetName
-          fingerprint
+          # fingerprint
           __typename
         }
         quantity
@@ -51,7 +51,7 @@ fragment _GetTransactions on Query {
           assetId
           policyId
           assetName
-          fingerprint
+          # fingerprint
           __typename
         }
         quantity
@@ -70,7 +70,7 @@ fragment _GetTransactions on Query {
         assetId
         policyId
         assetName
-        fingerprint
+        # fingerprint
         __typename
       }
       quantity
@@ -87,7 +87,7 @@ fragment _GetTransactions on Query {
           assetId
           policyId
           assetName
-          fingerprint
+          # fingerprint
           __typename
         }
         quantity
@@ -106,7 +106,7 @@ fragment _GetTransactions on Query {
           assetId
           policyId
           assetName
-          fingerprint
+          # fingerprint
           __typename
         }
         quantity

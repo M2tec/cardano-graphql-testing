@@ -1,0 +1,13 @@
+query GcExampleQuery1($where: TransactionFilter) {
+  transactions(
+    limit: 10,
+    order_by: INCLUDED_AT_DESC,
+    #offset: 0,
+    where: $where
+  ) {
+    hash 
+    
+    # inputs {        txHash}
+  }
+}
+

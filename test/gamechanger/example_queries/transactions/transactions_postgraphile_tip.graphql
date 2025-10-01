@@ -1,4 +1,4 @@
-query GcExampleQuery1($where: TransactionFilter) {
+fragment _GetTransactions on Query { 
   transactions(
     limit: 10,
     order_by: INCLUDED_AT_ASC,
@@ -146,4 +146,29 @@ query GcExampleQuery1($where: TransactionFilter) {
   }
   __typename
 }
+
+fragment _GetTip on Query {
+  cardano {
+    tip {
+      number
+      slotNo
+      slotInEpoch
+      epochNo
+      forgedAt
+      __typename
+    }
+    __typename
+  }
+  __typename
+}
+
+query GetTransactions($where: TransactionFilter) {
+  ..._GetTransactions
+  ..._GetTip
+}
+
+
+
+
+
 

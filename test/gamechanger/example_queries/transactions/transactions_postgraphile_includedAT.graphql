@@ -1,0 +1,15 @@
+query GcExampleQuery1($where: TransactionFilter) {
+  transactions(
+    limit: 10,
+    order_by: INCLUDED_AT_ASC,
+    #offset: 0,
+    where: $where
+  ) {
+    hash
+    includedAt
+
+    __typename
+  }
+  __typename
+}
+

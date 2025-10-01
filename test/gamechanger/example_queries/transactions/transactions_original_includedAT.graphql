@@ -1,0 +1,40 @@
+fragment _GetTransactions on Query {
+  transactions(limit: $limit, order_by: $order_by, offset: $offset, where: $where) {
+    hash
+    includedAt
+    __typename
+  }
+  __typename
+}
+
+fragment _GetTip on Query {
+  cardano {
+    tip {
+      number
+      slotNo
+      slotInEpoch
+      epochNo
+      forgedAt
+      __typename
+    }
+    __typename
+  }
+  __typename
+}
+
+query GetTransactions($limit: Int, $order_by: [Transaction_order_by!], $offset: Int, $where: Transaction_bool_exp) {
+  ..._GetTransactions
+  ..._GetTip
+}
+
+# {
+#   "where": {
+#     "hash": {
+#       "_in": [
+#         "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
+#         "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+#         "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc"
+#       ]
+#     }
+#   }
+# }
