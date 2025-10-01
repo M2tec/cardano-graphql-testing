@@ -18,6 +18,17 @@ fragment _GetTransactions on Query {
       address
       value
       txHash
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
       sourceTxHash
       sourceTxIndex
       redeemer {
@@ -35,6 +46,17 @@ fragment _GetTransactions on Query {
       address
       value
       txHash
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
       script {
         hash
         serialisedSize
@@ -60,6 +82,17 @@ fragment _GetTransactions on Query {
       address
       sourceTxHash
       sourceTxIndex
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
       txHash
       value
       __typename
@@ -139,7 +172,7 @@ fragment _GetTip on Query {
   __typename
 }
 
-query GetTransactions($limit: Int, $offset: Int, $where: TransactionFilter) {
+query GetTransactions($limit: Int, $order_by: [Transaction_order_by!], $offset: Int, $where: Transaction_bool_exp) {
   ..._GetTransactions
   ..._GetTip
 }

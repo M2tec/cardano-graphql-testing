@@ -1,5 +1,10 @@
-fragment _GetTransactions on Query {
-  transactions(limit: $limit, order_by: $order_by, offset: $offset, where: $where) {
+query GcExampleQuery1($where: TransactionFilter) {
+  transactions(
+    limit: 10,
+    #order_by: INCLUDED_AT_DESC,
+    #offset: 0,
+    where: $where
+  ) {
     blockIndex
     fee
     hash
@@ -11,13 +16,21 @@ fragment _GetTransactions on Query {
     deposit
     metadata {
       key
-      value
+      json
       __typename
     }
     inputs {
       address
       value
       txHash
+      tokens {
+        assetId
+        policyId
+        assetName          
+        #fingerprint
+        quantity
+        __typename
+      }
       sourceTxHash
       sourceTxIndex
       redeemer {
@@ -35,6 +48,14 @@ fragment _GetTransactions on Query {
       address
       value
       txHash
+      tokens {
+        assetId
+        policyId
+        assetName          
+        #fingerprint
+        quantity
+        __typename
+      }
       script {
         hash
         serialisedSize
@@ -44,13 +65,10 @@ fragment _GetTransactions on Query {
       __typename
     }
     mint {
-      asset {
-        assetId
-        policyId
-        assetName
-        fingerprint
-        __typename
-      }
+      assetId
+      policyId
+      assetName          
+      #fingerprint
       quantity
       __typename
     }
@@ -60,6 +78,14 @@ fragment _GetTransactions on Query {
       address
       sourceTxHash
       sourceTxIndex
+      tokens {
+        assetId
+        policyId
+        assetName          
+        #fingerprint
+        quantity
+        __typename
+      }
       txHash
       value
       __typename
@@ -69,13 +95,10 @@ fragment _GetTransactions on Query {
       sourceTxHash
       sourceTxIndex
       tokens {
-        asset {
-          assetId
-          policyId
-          assetName
-          fingerprint
-          __typename
-        }
+        assetId
+        policyId
+        assetName          
+        #fingerprint
         quantity
         __typename
       }
@@ -124,34 +147,3 @@ fragment _GetTransactions on Query {
   __typename
 }
 
-fragment _GetTip on Query {
-  cardano {
-    tip {
-      number
-      slotNo
-      slotInEpoch
-      epochNo
-      forgedAt
-      __typename
-    }
-    __typename
-  }
-  __typename
-}
-
-query GetTransactions($limit: Int, $offset: Int, $where: TransactionFilter) {
-  ..._GetTransactions
-  ..._GetTip
-}
-
-# {
-#   "where": {
-#     "hash": {
-#       "_in": [
-#         "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
-#         "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
-#         "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc"
-#       ]
-#     }
-#   }
-# }

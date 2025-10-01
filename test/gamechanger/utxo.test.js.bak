@@ -12,10 +12,13 @@ import { BlockFrostAPI } from '@blockfrost/blockfrost-js';
 
 import DeepDiff from "deep-diff";
 
-const API = new BlockFrostAPI({
-  projectId: "preprodreHl1IQCz3Jbnt3seOXd95c5Jxr9MEO7", 
-});
+import { getConfig } from './../config';
+const config = await getConfig();
+console.log("API:", config.keys.blockfrost)
 
+const API = new BlockFrostAPI({
+  projectId: config.keys.blockfrost, 
+});
 
 
 import BigNumber from 'bignumber.js'

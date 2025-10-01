@@ -20,8 +20,6 @@ const API = new BlockFrostAPI({
   projectId: config.keys.blockfrost, 
 });
 
-
-
 import BigNumber from 'bignumber.js'
 
 
