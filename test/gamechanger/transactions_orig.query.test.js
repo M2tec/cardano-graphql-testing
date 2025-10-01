@@ -49,64 +49,62 @@ describe('transactions', () => {
     client = await testClient.preprodOrig()
   });
 
+      async function getTxHistory(address) {
+        try {
+
+          const url = "https://ar02.gamechanger.finance:2096/postgrest/rpc/get_tx_history_for_addresses?limit=3&offset=0";
+
+          const payload = {
+            data: {
+              addresses: [address]
+            }
+          };
+
+          const response = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+
+          if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+
+          const data = await response.json();
+          util.saveResult(data, "gamechanger", "transactions_postgraphile", `${address}_txHistory.json`);
+          console.log("Transaction history:", data);
+
+          // Adjust depending on API response structure
+          const txHashes = Array.isArray(data) ? data.map(item => item.tx_hash) : data.data.map(item => item.tx_hash);
+
+          if (!txHashes.length) {
+            console.log("No transactions found for address", address);
+            return;
+          }
+
+          const graphqlAddressData = await client.query({
+            query: await loadQueryNode('transactions_original'),
+            variables: {
+              where: { hash: { _in: txHashes } },
+              order_by: { includedAt: "asc" }
+            }
+          });
+
+          if (graphqlAddressData.errors) console.error("GraphQL errors:", graphqlAddressData.errors);
+
+          util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_orig.json`);
+
+        } catch (err) {
+          console.error("Error fetching history:", err);
+        }
+      }
+
   for (const address of addresList) {
 
     it(`Compare blockfrost data for address: ${address}`, async () => {
 
       console.log(`Querying transactions: ${address}`);
 
-      const url = "https://ar02.gamechanger.finance:2096/postgrest/rpc/get_tx_history_for_addresses?limit=3&offset=0";
+      await getTxHistory(address);
 
-      const payload = {
-        data: {
-          addresses: [address]
-        }
-      };
-
-
-      async function getTxHistory() {
-
-
-        try {
-          const response = await fetch(url, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-              // "Authorization": "Bearer <TOKEN>"  <-- if required
-            },
-            body: JSON.stringify(payload)
-          });
-
-          if (!response.ok) {
-            throw new Error(`HTTP error ${response.status}`);
-          }
-
-          const data = await response.json();
-
-          util.saveResult(data, "gamechanger", "transactions_postgraphile", `${address}_txHistory.json`);
-
-          console.log("Transaction history:", data);
-          const txHashes = data.map(item => item.tx_hash);
-
-          const graphqlAddressData = await client.query({
-            query: await loadQueryNode('transactions_original'),
-            variables: {
-              "where": {
-                "hash": {
-                  "_in": txHashes
-                }
-              },
-              "order_by": { "includedAt": "asc" }
-            }
-          })
-
-          util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_orig.json`);
-        } catch (err) {
-          console.error("Error fetching history:", err);
-        }
-      }
-
-      getTxHistory();
 
 
       // [
