@@ -55,26 +55,68 @@ describe('transactions', () => {
 
       console.log(`Querying transactions: ${address}`);
 
-      const graphqlAddressData = await client.query({
-        query: await loadQueryNode('transactions_original'),
-        variables: {
-          "where": {
-            "hash": {
-              "_in": [
-                      "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
-                      "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",           
-                      "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
-                      "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f"        
-                    ]
-              }
-          },    
-          "order_by": {"includedAt": "asc"}
+      const url = "https://ar02.gamechanger.finance:2096/postgrest/rpc/get_tx_history_for_addresses?limit=3&offset=0";
+
+      const payload = {
+        data: {
+          addresses: [address]
+        }
+      };
+
+
+      async function getTxHistory() {
+
+
+        try {
+          const response = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+              // "Authorization": "Bearer <TOKEN>"  <-- if required
+            },
+            body: JSON.stringify(payload)
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP error ${response.status}`);
           }
 
-        })
+          const data = await response.json();
+
+          util.saveResult(data, "gamechanger", "transactions_postgraphile", `${address}_txHistory.json`);
+
+          console.log("Transaction history:", data);
+          const txHashes = data.map(item => item.tx_hash);
+
+          const graphqlAddressData = await client.query({
+            query: await loadQueryNode('transactions_original'),
+            variables: {
+              "where": {
+                "hash": {
+                  "_in": txHashes
+                }
+              },
+              "order_by": { "includedAt": "asc" }
+            }
+          })
+
+          util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_orig.json`);
+        } catch (err) {
+          console.error("Error fetching history:", err);
+        }
+      }
+
+      getTxHistory();
 
 
-      util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_orig.json`);
+      // [
+      //                       "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+      //                       "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",           
+      //                       "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+      //                       "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f"        
+      //                     ]
+
+
 
       // let gqlBlockfrostData = util.graphqlToBlockfrost(graphqlAddressData.data)
 
