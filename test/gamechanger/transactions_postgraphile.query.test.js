@@ -17,10 +17,8 @@ const config = await getConfig();
 console.log("API:", config.keys.blockfrost)
 
 const API = new BlockFrostAPI({
-  projectId: config.keys.blockfrost, 
+  projectId: config.keys.blockfrost,
 });
-
-
 
 import BigNumber from 'bignumber.js'
 
@@ -59,13 +57,24 @@ describe('transactions', () => {
 
       console.log(`Querying transactions: ${address}`);
 
-      // const graphqlAddressData = await client.query({
-      //   query: await loadQueryNode('transactions'),
-      //   variables: { addresses: [address] }
-      // })
+      const graphqlAddressData = await client.query({
+        // query: await loadQueryNode('transactions_postgraphile_tip'),
+        query: await loadQueryNode('transactions_postgraphile_hash'),
+        variables: {
+          "where": {
+            "transactionInputs": {
+              "_some": {
+                "address": {
+                  "_in": [ address ]
+                }
+              }
+            }
+          }
+        }
+      })
 
-      // util.saveResult(graphqlAddressData.data, "gamechanger", "transactions", `${address}_graphql.json`);
-      
+      util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_graphql_hash.json`);
+
       // let gqlBlockfrostData = util.graphqlToBlockfrost(graphqlAddressData.data)
 
       // util.saveResult(gqlBlockfrostData, "gamechanger", "paymentAddress", `${address}_gql_blockfrost.json`);
@@ -76,7 +85,7 @@ describe('transactions', () => {
       // const blockfrostAddressData = await API.addresses(address);
 
       // util.saveResult(blockfrostAddressData, "gamechanger", "paymentAddress", `${address}_blockfrost.json`);
-      
+
       // let blockfrostStripped = util.blockfrostRemoveEnding(blockfrostAddressData)
 
       // util.saveResult(blockfrostStripped, "gamechanger", "paymentAddress", `${address}_blockfrost_stripped.json`);
@@ -89,9 +98,9 @@ describe('transactions', () => {
       //   util.saveResult(differences, "gamechanger", "paymentAddress", `${address}_differences.json`);
       // }
 
-      const blockfrostTransactionData = await API.addressesTransactions(address);
+      // const blockfrostTransactionData = await API.addressesTransactions(address);
 
-      util.saveResult(blockfrostTransactionData, "gamechanger", "transactions", `${address}_blockfrost.json`);
+      // util.saveResult(blockfrostTransactionData, "gamechanger", "transactions_postgraphile", `${address}_blockfrost.json`);
 
       // expect(blockfrostTipData.slot.toString()).toBe(graphqlAddressData.data.cardano[0].tip.slotNo);
       // expect(blockfrostStripped).toEqual(gqlBlockfrostData);

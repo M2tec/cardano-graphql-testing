@@ -1,0 +1,693 @@
+{
+  "transactions": [
+    {
+      "__typename": "Transaction",
+      "blockIndex": 0,
+      "fee": "222701",
+      "hash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+      "invalidBefore": null,
+      "invalidHereafter": null,
+      "includedAt": "2024-10-31T16:31:18.000000",
+      "size": 1527,
+      "totalOutput": "81484059",
+      "deposit": "0",
+      "metadata": [
+        {
+          "__typename": "TxMetadatum",
+          "key": "73",
+          "value": {
+            "v": "1.0",
+            "tags": [
+              "smart-send"
+            ],
+            "type": "tx",
+            "title": "Smart Send",
+            "referrer": "https://beta-preprod-wallet.gamechanger.finance"
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "1706760",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef046616b65555344",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "46616b65555344",
+              "quantity": "1000"
+            },
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef047616d654368616e676572546f6b656ef09f9a80",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "47616d654368616e676572546f6b656ef09f9a80",
+              "quantity": "100"
+            },
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f4147616d654368616e6765724e4654202331",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "47616d654368616e6765724e4654202331",
+              "quantity": "1"
+            },
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f4147616d654368616e6765724e4654202332",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "47616d654368616e6765724e4654202332",
+              "quantity": "1"
+            },
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f4147616d654368616e6765724e4654202333",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "47616d654368616e6765724e4654202333",
+              "quantity": "1"
+            },
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f417269636b794064726f70636c7562",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "7269636b794064726f70636c7562",
+              "quantity": "1"
+            }
+          ],
+          "sourceTxHash": "7b367e9c2b5b1e62e798bdeea6f8d1b47b987b0dcb514c3ac28bf4c7c94b30ff",
+          "sourceTxIndex": 0,
+          "redeemer": null
+        },
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "80000000",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "sourceTxHash": "7b367e9c2b5b1e62e798bdeea6f8d1b47b987b0dcb514c3ac28bf4c7c94b30ff",
+          "sourceTxIndex": 2,
+          "redeemer": null
+        }
+      ],
+      "outputs": [
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "1150770",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef046616b65555344",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "46616b65555344",
+              "quantity": "2"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2159390",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef046616b65555344",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "46616b65555344",
+              "quantity": "998"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2211110",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef047616d654368616e676572546f6b656ef09f9a80",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "47616d654368616e676572546f6b656ef09f9a80",
+              "quantity": "100"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2193870",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f4147616d654368616e6765724e4654202331",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "47616d654368616e6765724e4654202331",
+              "quantity": "1"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2193870",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f4147616d654368616e6765724e4654202332",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "47616d654368616e6765724e4654202332",
+              "quantity": "1"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2193870",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f4147616d654368616e6765724e4654202333",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "47616d654368616e6765724e4654202333",
+              "quantity": "1"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2180940",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f417269636b794064726f70636c7562",
+              "policyId": "a330a4b05adbdc70020bfcab81b69b8807322fdf6142712a8f117f41",
+              "assetName": "7269636b794064726f70636c7562",
+              "quantity": "1"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2000000",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "3000000",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "5000000",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "9000000",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "17000000",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "31200239",
+          "txHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "tokens": [],
+          "script": null
+        }
+      ],
+      "mint": [],
+      "scriptSize": 0,
+      "validContract": true,
+      "referenceInputs": [],
+      "collateralInputs": [],
+      "collateralOutputs": [],
+      "scripts": [],
+      "redeemers": []
+    },
+    {
+      "__typename": "Transaction",
+      "blockIndex": 0,
+      "fee": "181957",
+      "hash": "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",
+      "invalidBefore": null,
+      "invalidHereafter": null,
+      "includedAt": "2024-10-31T18:25:39.000000",
+      "size": 601,
+      "totalOutput": "33968813",
+      "deposit": "0",
+      "metadata": [
+        {
+          "__typename": "TxMetadatum",
+          "key": "73",
+          "value": {
+            "v": "1.0",
+            "type": "tx",
+            "title": "Unimatrix Multisig 1",
+            "referrer": "https://beta-preprod-wallet.gamechanger.finance"
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qqwfs0k42vve88mw2gdl08zevk3tg44vm2up66k555sd8uau4p4s4tm6s7fr7dp6hmqxe3klu484pehqg3t50ed27jfqz046we",
+          "value": "33000000",
+          "txHash": "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",
+          "tokens": [],
+          "sourceTxHash": "e80368d50d5f50512720dd9b7b202d76e2112ad18283ceab94a2928c51de6f09",
+          "sourceTxIndex": 5,
+          "redeemer": null
+        },
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "1150770",
+          "txHash": "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef046616b65555344",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "46616b65555344",
+              "quantity": "2"
+            }
+          ],
+          "sourceTxHash": "ffe6ba4ba5c27d48496bc334c1f7e6d1f12fd95bcaf2d03637b23944bb63f017",
+          "sourceTxIndex": 0,
+          "redeemer": null
+        }
+      ],
+      "outputs": [
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qqwfs0k42vve88mw2gdl08zevk3tg44vm2up66k555sd8uau4p4s4tm6s7fr7dp6hmqxe3klu484pehqg3t50ed27jfqz046we",
+          "value": "32640000",
+          "txHash": "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef046616b65555344",
+              "policyId": "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "assetName": "46616b65555344",
+              "quantity": "2"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "1328813",
+          "txHash": "cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc",
+          "tokens": [],
+          "script": null
+        }
+      ],
+      "mint": [],
+      "scriptSize": 0,
+      "validContract": true,
+      "referenceInputs": [],
+      "collateralInputs": [],
+      "collateralOutputs": [],
+      "scripts": [],
+      "redeemers": []
+    },
+    {
+      "__typename": "Transaction",
+      "blockIndex": 0,
+      "fee": "223097",
+      "hash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+      "invalidBefore": null,
+      "invalidHereafter": "102436571",
+      "includedAt": "2025-09-16T14:38:23.000000",
+      "size": 1538,
+      "totalOutput": "79776903",
+      "deposit": "0",
+      "metadata": [
+        {
+          "__typename": "TxMetadatum",
+          "key": "73",
+          "value": {
+            "v": "1.0",
+            "type": "tx",
+            "title": "NFT Minting Demo",
+            "referrer": ""
+          }
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "721",
+          "value": {
+            "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd0": {
+              "GameChangerNFT": {
+                "url": "https://gamechanger.finance",
+                "name": "GameChangerNFT",
+                "files": [
+                  {
+                    "src": "ipfs://QmVWGxAKpB2Sxy3ZnfZsdt3gxocFEUUe8GPBcraLTZSQKT",
+                    "sha256": "5b8ee29640bf24074a3988bb6b852165731fe8612793ef5a74433f1689e2cb4b",
+                    "arweaveId": "jn5d55VbVdpvA3y9WAlzRRBP1zhkq8l3QiUR-vVHb-0",
+                    "mediaType": "image/png"
+                  }
+                ],
+                "image": "ipfs://QmVWGxAKpB2Sxy3ZnfZsdt3gxocFEUUe8GPBcraLTZSQKT",
+                "author": "GameChanger Wallet",
+                "version": "1.0",
+                "mediaType": "image/png",
+                "description": "Only 100 NFTs were minted"
+              }
+            }
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "80000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "sourceTxHash": "7b367e9c2b5b1e62e798bdeea6f8d1b47b987b0dcb514c3ac28bf4c7c94b30ff",
+          "sourceTxIndex": 1,
+          "redeemer": null
+        }
+      ],
+      "outputs": [
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qrl07u9ssdtdwtzhrt0zrrr79yejxhfvmsmjt9jxqyaz0ktp6ydulqht6r9z4ld0jms3a3c7gw45u32vhc2ftdp2f6rqvz02jw",
+          "value": "2000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd047616d654368616e6765724e4654",
+              "policyId": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd0",
+              "assetName": "47616d654368616e6765724e4654",
+              "quantity": "1"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2185250",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [
+            {
+              "__typename": "TokenInOutput",
+              "assetId": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd047616d654368616e6765724e4654",
+              "policyId": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd0",
+              "assetName": "47616d654368616e6765724e4654",
+              "quantity": "99"
+            }
+          ],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "2000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "3000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "5000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "9000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "17000000",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "32999824",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "6591829",
+          "txHash": "34bb391769ee5e203a07ac3c4ed46372412e0faa1b471f2c5f8f8a3842348a13",
+          "tokens": [],
+          "script": null
+        }
+      ],
+      "mint": [
+        {
+          "__typename": "TokenMint",
+          "assetId": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd047616d654368616e6765724e4654",
+          "policyId": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd0",
+          "assetName": "47616d654368616e6765724e4654",
+          "quantity": "100"
+        }
+      ],
+      "scriptSize": 0,
+      "validContract": true,
+      "referenceInputs": [],
+      "collateralInputs": [],
+      "collateralOutputs": [],
+      "scripts": [
+        {
+          "__typename": "Script",
+          "hash": "e732d5c9a42b43afbc0a601c16d80957004c6c8da823a6904e7f5cd0",
+          "serialisedSize": null,
+          "type": "TIMELOCK"
+        }
+      ],
+      "redeemers": []
+    },
+    {
+      "__typename": "Transaction",
+      "blockIndex": 2,
+      "fee": "325441",
+      "hash": "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
+      "invalidBefore": "103114200",
+      "invalidHereafter": "103200600",
+      "includedAt": "2025-09-25T11:04:52.000000",
+      "size": 3864,
+      "totalOutput": "39674559",
+      "deposit": "0",
+      "metadata": [
+        {
+          "__typename": "TxMetadatum",
+          "key": "73",
+          "value": {
+            "v": "1.0",
+            "tags": [
+              "gcfs",
+              "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0",
+              "dandelion",
+              "asset1hp3au4gqa3pfl500nxta39u47ecw9y3l366lvv",
+              "data"
+            ],
+            "type": "tx",
+            "group": [
+              "40e8d69b466f23bc4753a9b2b9ab2533f2c3ef611871086b4da93ef0-dandeli",
+              "on-2025-09-25T10:50:38.545Z"
+            ],
+            "index": 0,
+            "title": "GCFS #1: Data"
+          }
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "423703282000000",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "701031142000000",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "711313685891586",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "712930210831310",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "713160674063096",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "715487496438072",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "715915077093921",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "715996452290192",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "716022913347082",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "718186009970021",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "718698289093217",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "718942808668366",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "718999744018730",
+          "value": 0
+        },
+        {
+          "__typename": "TxMetadatum",
+          "key": "719112728609104",
+          "value": 0
+        }
+      ],
+      "inputs": [
+        {
+          "__typename": "TransactionInput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "40000000",
+          "txHash": "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
+          "tokens": [],
+          "sourceTxHash": "7b367e9c2b5b1e62e798bdeea6f8d1b47b987b0dcb514c3ac28bf4c7c94b30ff",
+          "sourceTxIndex": 3,
+          "redeemer": null
+        }
+      ],
+      "outputs": [
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qpjmk4p6c74n4xpzsw5m5rfzqhvrfkqqyxdm3f7jlp5p5y0epjs00hysz9zg9qlpyv9h90eudca80h7sy4hxyzvuvt8sg4yaam",
+          "value": "1500000",
+          "txHash": "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "14093700",
+          "txHash": "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
+          "tokens": [],
+          "script": null
+        },
+        {
+          "__typename": "TransactionOutput",
+          "address": "addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p",
+          "value": "24080859",
+          "txHash": "48e52efb0f8a363fbf052b8e6b59ef9f30a44f0bcac76e530bff82f9a7c7d51f",
+          "tokens": [],
+          "script": null
+        }
+      ],
+      "mint": [],
+      "scriptSize": 0,
+      "validContract": true,
+      "referenceInputs": [],
+      "collateralInputs": [],
+      "collateralOutputs": [],
+      "scripts": [],
+      "redeemers": []
+    }
+  ],
+  "__typename": "Query",
+  "cardano": [
+    {
+      "__typename": "Cardano",
+      "tip": {
+        "__typename": "Block",
+        "number": 3966059,
+        "slotNo": "103712864",
+        "slotInEpoch": 378464,
+        "epochNo": 243,
+        "forgedAt": "2025-10-02T09:07:44.000000"
+      }
+    }
+  ]
+}
