@@ -24,10 +24,13 @@ fragment _GetTransactions on Query {
       value
       txHash
       tokens {
-        assetId
-        policyId
-        assetName          
-        #fingerprint
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
         quantity
         __typename
       }
@@ -49,10 +52,13 @@ fragment _GetTransactions on Query {
       value
       txHash
       tokens {
-        assetId
-        policyId
-        assetName          
-        #fingerprint
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
         quantity
         __typename
       }
@@ -65,10 +71,13 @@ fragment _GetTransactions on Query {
       __typename
     }
     mint {
-      assetId
-      policyId
-      assetName          
-      #fingerprint
+      asset {
+        assetId
+        policyId
+        assetName
+        # fingerprint
+        __typename
+      }
       quantity
       __typename
     }
@@ -79,10 +88,13 @@ fragment _GetTransactions on Query {
       sourceTxHash
       sourceTxIndex
       tokens {
-        assetId
-        policyId
-        assetName          
-        #fingerprint
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
         quantity
         __typename
       }
@@ -95,10 +107,13 @@ fragment _GetTransactions on Query {
       sourceTxHash
       sourceTxIndex
       tokens {
-        assetId
-        policyId
-        assetName          
-        #fingerprint
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
         quantity
         __typename
       }

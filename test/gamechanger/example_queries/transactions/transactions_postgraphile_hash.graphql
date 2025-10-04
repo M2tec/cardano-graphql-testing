@@ -1,4 +1,3 @@
-transactions_postgraphile_tip:
 query GcExampleQuery1($where: Transaction_bool_exp) {
   transactions(
     limit: 10,
@@ -10,39 +9,3 @@ query GcExampleQuery1($where: Transaction_bool_exp) {
   }
 }
 
-address = addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p
-
-
-      const graphqlAddressData = await client.query({
-        // query: await loadQueryNode('transactions_postgraphile_tip'),
-        query: await loadQueryNode('transactions_postgraphile_hash'),
-        variables: {
-          "where": {
-            "transactionInputs": {
-              "_some": {
-                "address": {
-                  "_in": [ address ]
-                }
-              }
-            }
-          }
-        }
-      })
-
-
-curl -X POST "http://localhost:4000/graphql" \
-     -H "Content-Type: application/json" \
-     -d '{
-       "query": "query GcExampleQuery1($where: Transaction_bool_exp) { transactions(limit: 10, order_by: INCLUDED_AT_DESC, where: $where) { hash } }",
-       "variables": {
-         "where": {
-           "transactionInputs": {
-             "_some": {
-               "address": {
-                 "_in": ["addr_test1qzhk0pycq7g5krcl88dfly68r4d8v0qem66tfz0pv3gm284vtuft7q8490g8a8jq6f47sy87gvse82danhchjvjf3ucqsccj6p"]
-               }
-             }
-           }
-         }
-       }
-     }' | jq '.data'

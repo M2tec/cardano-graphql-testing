@@ -58,11 +58,11 @@ describe('transactions', () => {
       console.log(`Querying transactions: ${address}`);
 
       const graphqlAddressData = await client.query({
-        // query: await loadQueryNode('transactions_postgraphile_tip'),
-        query: await loadQueryNode('transactions_postgraphile_hash'),
+        query: await loadQueryNode('transactions_postgraphile_tip'),
+        // query: await loadQueryNode('transactions_postgraphile_hash'),
         variables: {
           "where": {
-            "transactionInputs": {
+            "outputs": {
               "_some": {
                 "address": {
                   "_in": [ address ]
@@ -73,7 +73,7 @@ describe('transactions', () => {
         }
       })
 
-      util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_graphql_hash.json`);
+      util.saveResult(graphqlAddressData.data, "gamechanger", "transactions_postgraphile", `${address}_graphql.json`);
 
       // let gqlBlockfrostData = util.graphqlToBlockfrost(graphqlAddressData.data)
 
