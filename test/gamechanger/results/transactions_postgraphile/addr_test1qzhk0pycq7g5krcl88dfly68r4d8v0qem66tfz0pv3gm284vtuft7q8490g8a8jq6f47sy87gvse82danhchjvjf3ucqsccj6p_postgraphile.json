@@ -1096,11 +1096,11 @@
       "__typename": "Cardano",
       "tip": {
         "__typename": "Block",
-        "number": 3978023,
-        "slotNo": "103996545",
-        "slotInEpoch": 230145,
-        "epochNo": 244,
-        "forgedAt": "2025-10-05T15:55:45.000000"
+        "number": 3987531,
+        "slotNo": "104230096",
+        "slotInEpoch": 31696,
+        "epochNo": 245,
+        "forgedAt": "2025-10-08T08:48:16.000000"
       }
     }
   ]

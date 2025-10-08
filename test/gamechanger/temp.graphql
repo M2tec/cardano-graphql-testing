@@ -1,0 +1,39 @@
+fragment _GetTransactions on Query {
+  transactions(limit: $limit, order_by: $order_by, offset: $offset, where: $where) {
+    blockIndex
+    fee
+    hash
+    inputs {
+      address
+      value
+      txHash
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
+      sourceTxHash
+      sourceTxIndex
+      redeemer {
+        fee
+        index
+        purpose
+        scriptHash
+        unitMem
+        unitSteps
+        __typename
+      }
+      __typename
+    }
+  }
+}
+
+query GetTransactions($limit: Int, $order_by: [Transaction_order_by!], $offset: Int, $where: Transaction_bool_exp) {
+  ..._GetTransactions
+}

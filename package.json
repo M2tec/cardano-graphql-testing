@@ -9,7 +9,7 @@
     "@blockfrost/blockfrost-js": "^6.0.0",
     "cross-fetch": "^4.1.0",
     "deep-diff": "^1.0.2",
-    "dotenv": "^17.2.3",
+    "dotenv": "^16.4.5",
     "graphql-tag": "^2.12.6",
     "json-diff": "^1.0.6",
     "p-retry": "^4.6.2",
@@ -25,6 +25,9 @@
   "scripts": {
     "blockfrost": "node ./test/blockfrost/test.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:gc:transactions:postgraphile": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js  test/gamechanger/transactions_postgraphile.query.test.js  ",
+    "test:gc:transactions:original": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js  test/gamechanger/transactions_orig_hashfix.query.test.js  ",
+    "test:gc:transactions:diff-postgraphile": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js  test/gamechanger/transactions_diff.query.test.js",
     "transform": "node ./test/compare/paymentAddress_new_to_blockfrost_format.js",
     "compare": "diff ./test/compare/results/paymentAddress/ ./test/blockfrost/results/paymentAddress/"
   },

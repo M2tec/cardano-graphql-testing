@@ -1,0 +1,189 @@
+fragment _GetTransactions on Query { 
+  transactions(
+    limit: 10,
+    order_by: INCLUDED_AT_ASC,
+    #offset: 0,
+    where: $where
+  ) {
+    blockIndex
+    fee
+    hash
+    invalidBefore
+    invalidHereafter
+    includedAt
+    size
+    totalOutput
+    deposit
+    metadata {
+      key
+      value
+      __typename
+    }
+    inputs  (order_by: [TX_HASH_ASC]) {
+      address
+      value
+      txHash
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
+      sourceTxHash
+      sourceTxIndex
+      redeemer {
+        fee
+        index
+        purpose
+        scriptHash
+        unitMem
+        unitSteps
+        __typename
+      }
+      __typename
+    }
+    outputs (order_by: [TX_HASH_ASC]) {
+      address
+      value
+      txHash
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
+      script {
+        hash
+        serialisedSize
+        type
+        __typename
+      }
+      __typename
+    }
+    mint {
+      asset {
+        assetId
+        policyId
+        assetName
+        # fingerprint
+        __typename
+      }
+      quantity
+      __typename
+    }
+    scriptSize
+    validContract
+    referenceInputs {
+      address
+      sourceTxHash
+      sourceTxIndex
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
+      txHash
+      value
+      __typename
+    }
+    collateralInputs {
+      address
+      sourceTxHash
+      sourceTxIndex
+      tokens {
+        asset {
+          assetId
+          policyId
+          assetName
+          # fingerprint
+          __typename
+        }
+        quantity
+        __typename
+      }
+      txHash
+      value
+      __typename
+    }
+    collateralOutputs {
+      address
+      addressHasScript
+      datum {
+        bytes
+        hash
+        value
+        __typename
+      }
+      index
+      paymentCredential
+      script {
+        hash
+        serialisedSize
+        type
+        __typename
+      }
+      txHash
+      value
+      __typename
+    }
+    scripts {
+      hash
+      serialisedSize
+      type
+      __typename
+    }
+    redeemers {
+      fee
+      index
+      purpose
+      scriptHash
+      unitMem
+      unitSteps
+      __typename
+    }
+    __typename
+  }
+  __typename
+}
+
+fragment _GetTip on Query {
+  cardano {
+    tip {
+      number
+      slotNo
+      slotInEpoch
+      epochNo
+      forgedAt
+      __typename
+    }
+    __typename
+  }
+  __typename
+}
+
+query GetTransactions($where: Transaction_bool_exp) {
+  ..._GetTransactions
+  ..._GetTip
+}
+
+
+
+
+
+

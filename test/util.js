@@ -29,7 +29,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 //   }
 // }
 
-
+import sortObject from 'sort-object-keys';
 
 export const testClient = {
   mainnet: buildClient.bind(this,
@@ -66,7 +66,8 @@ export async function buildClient (
   apiUri
 ) {
 
-    console.log("apiUri: ", apiUri)
+    
+    // console.log("apiUri: ", apiUri)
     const client = await createTestApolloClient(apiUri)
 
     await pRetry(async () => {
@@ -79,18 +80,17 @@ export async function buildClient (
       if ((result.data)?.cardanoDbMeta?.initialized === false) {
         console.log("Failure")
         throw new Error(`Cardano DB is not initialized: ${JSON.stringify(result.data)}`)
-      } else {
-        console.log("Connection: ", result)
-      }
+      } 
 
-      console.log("Retry")
+      // console.log("Retry")
     }
       , {
         factor: 1.75,
         retries: 9,
         // onFailedAttempt: onFailedAttemptFor('Cardano GraphQL Server readiness')
       })
-    await new Promise(res => setTimeout(res, 2500)) // wait 1s
+    await new Promise(res => setTimeout(res, 500)) // wait 1s
+    
     return client
   }
 
@@ -102,26 +102,6 @@ export async function loadQueryNode (fileBasePath, name) {
     return gql`${await fs.promises.readFile(queryPath)}`
 }
 
-
-export function saveResult(
-  data,
-  subdir = "orig",
-  subject = "standard",
-  filename = "result.json"
-) {
-  const resultsDir = path.resolve(__dirname, subdir, "results", subject);
-
-  // make sure results folder exists
-  if (!fs.existsSync(resultsDir)) {
-    fs.mkdirSync(resultsDir, { recursive: true });
-  }
-
-  // write JSON file
-  const filePath = path.join(resultsDir, filename);
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
-
-  console.log(`✅ Result written to ${filePath}`);
-}
 
 function graphqlToBlockfrost(graphqlResponse) {
   if (!graphqlResponse.paymentAddresses || graphqlResponse.paymentAddresses.length === 0) {
@@ -157,6 +137,85 @@ function graphqlToBlockfrost(graphqlResponse) {
   return { address, amount };
 }
 
+function stableSortDeep(value) {
+  if (Array.isArray(value)) {
+    // Sort each element first
+    value = value.map(stableSortDeep);
+    // Then sort array elements by their stable string form
+    value.sort(function(a, b) {
+      var sa = stableStringify(a);
+      var sb = stableStringify(b);
+      return sa < sb ? -1 : sa > sb ? 1 : 0;
+    });
+    return value;
+  } else if (value && typeof value === 'object') {
+    // Sort object values recursively
+    var sorted = {};
+    Object.keys(value).sort().forEach(function(k) {
+      sorted[k] = stableSortDeep(value[k]);
+    });
+    return sorted;
+  } else {
+    // Primitive (string, number, null, etc.)
+    return value;
+  }
+}
+
+// Reuse stableStringify from before
+function stableStringify(obj) {
+  if (obj === null || typeof obj !== 'object') return JSON.stringify(obj);
+  if (Array.isArray(obj)) return '[' + obj.map(stableStringify).join(',') + ']';
+  var keys = Object.keys(obj).sort();
+  return '{' + keys.map(function(k) {
+    return JSON.stringify(k) + ':' + stableStringify(obj[k]);
+  }).join(',') + '}';
+}
+
+export function saveResult(
+  data,
+  subdir = "orig",
+  subject = "standard",
+  filename = "result.json"
+) {
+  const resultsDir = path.resolve(__dirname, subdir, "results", subject);
+
+  // make sure results folder exists
+  if (!fs.existsSync(resultsDir)) {
+    fs.mkdirSync(resultsDir, { recursive: true });
+  }
+
+  // write JSON file
+  const filePath = path.join(resultsDir, filename);
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
+
+  // console.log(`✅ Result written to ${filePath}`);
+
+  // write normalized
+  filenameNormalized = filename.replace(/\.json$/, "") + "_normalized.json";
+  const filePathNormalized = path.join(resultsDir, filenameNormalized);
+
+  var sorted = sortObject(data)
+  var normalized = stableSortDeep(sorted);
+
+  fs.writeFileSync(filePathNormalized, JSON.stringify(normalized, null, 2), "utf-8");
+
+
+}
+
+
+function replaceString(obj, findStr, replaceStr) {
+  for (const key in obj) {
+    if (typeof obj[key] === 'string') {
+      // Use split/join to safely replace all occurrences of arbitrary strings
+      obj[key] = obj[key].split(findStr).join(replaceStr);
+      // Or, if you prefer regex (for more advanced patterns), you can use:
+      // obj[key] = obj[key].replace(new RegExp(findStr, 'g'), replaceStr);
+    } else if (typeof obj[key] === 'object' && obj[key] !== null) {
+      replaceString(obj[key], findStr, replaceStr); // recursive
+    }
+  }
+}
+
 
 function blockfrostRemoveEnding(blockfrostData) {
 
@@ -170,4 +229,4 @@ function blockfrostRemoveEnding(blockfrostData) {
   }
 
 
-export default { loadQueryNode, createTestApolloClient, saveResult, graphqlToBlockfrost, blockfrostRemoveEnding }
+export default { loadQueryNode, replaceString, createTestApolloClient, saveResult, graphqlToBlockfrost, blockfrostRemoveEnding }
