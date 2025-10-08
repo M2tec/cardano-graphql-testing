@@ -191,13 +191,13 @@ export function saveResult(
   // console.log(`✅ Result written to ${filePath}`);
 
   // write normalized
-  filenameNormalized = filename.replace(/\.json$/, "") + "_normalized.json";
-  const filePathNormalized = path.join(resultsDir, filenameNormalized);
+  // filenameNormalized = filename.replace(/\.json$/, "") + "_normalized.json";
+  // const filePathNormalized = path.join(resultsDir, filenameNormalized);
 
-  var sorted = sortObject(data)
-  var normalized = stableSortDeep(sorted);
+  // var sorted = sortObject(data)
+  // var normalized = stableSortDeep(sorted);
 
-  fs.writeFileSync(filePathNormalized, JSON.stringify(normalized, null, 2), "utf-8");
+  // fs.writeFileSync(filePathNormalized, JSON.stringify(normalized, null, 2), "utf-8");
 
 
 }

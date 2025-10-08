@@ -1,0 +1,9 @@
+query getTransactionHashes($where: Transaction_bool_exp) {
+  transactions(
+    order_by: HASH_ASC,
+    where: $where
+  ) {
+    hash 
+  }
+}
+

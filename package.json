@@ -4,6 +4,9 @@
   "description": "",
   "type": "module",
   "main": "index.js",
+  "config": {
+    "jest": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
   "dependencies": {
     "@apollo/client": "^4.0.5",
     "@blockfrost/blockfrost-js": "^6.0.0",
@@ -23,13 +26,11 @@
     "test": "test"
   },
   "scripts": {
-    "blockfrost": "node ./test/blockfrost/test.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:gc:transactions:postgraphile": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js  test/gamechanger/transactions_postgraphile.query.test.js  ",
-    "test:gc:transactions:original": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js  test/gamechanger/transactions_orig_hashfix.query.test.js  ",
-    "test:gc:transactions:diff-postgraphile": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js  test/gamechanger/transactions_diff.query.test.js",
-    "transform": "node ./test/compare/paymentAddress_new_to_blockfrost_format.js",
-    "compare": "diff ./test/compare/results/paymentAddress/ ./test/blockfrost/results/paymentAddress/"
+    "test:gc:tx:new":               "$npm_package_config_jest test/gamechanger-new/transactions.test.js  ",
+    "test:gc:tx:new_hashonly":      "$npm_package_config_jest test/gamechanger-new/transactions_hash.test.js  ",
+    "test:gc:tx:original":          "$npm_package_config_jest test/gamechanger-orig/transactions_hashfix.test.js  ",
+    "test:gc:tx:diff":              "$npm_package_config_jest test/compare/transactions_diff.test.js",
+    "test:blockfrost:tx":           "$npm_package_config_jest test/blockfrost/transactions.test.js"
   },
   "repository": {
     "type": "git",

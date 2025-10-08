@@ -34,7 +34,7 @@ console.log("Addresses:", addresList)
 
 for (const address of addresList) {
 
-  describe('transactions', () => {
+  describe('utxos', () => {
 
     it(`Compare blockfrost data for address: ${address}`, async () => {
 

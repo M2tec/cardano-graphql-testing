@@ -8,10 +8,6 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-import { BlockFrostAPI } from '@blockfrost/blockfrost-js';
-
-import { diffString, diff } from 'json-diff';
-
 import { getConfig } from './../config';
 const config = await getConfig();
 
@@ -31,11 +27,6 @@ function normalizeCardanoResponse(data) {
 }
 
 describe('transactions', () => {
-//   let client
-
-//   beforeAll(async () => {
-//     client = await testClient.preprod()
-//   });
 
   for (const address of config.data.addressList) {
 
