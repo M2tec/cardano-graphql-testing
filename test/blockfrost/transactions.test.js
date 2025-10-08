@@ -17,66 +17,6 @@ const API = new BlockFrostAPI({
 describe('transactions', () => {
 
 
-//   async function classifyTransactions(address, txList) {
-//     const results = [];
-
-//     // txList = ['cc06efdd929dbf739893d9c88577f13f61edc0d1db9a0414106fb9d351ab33dc']
-
-//     for (const hash of txList) {
-
-//       const txUtxo = await API.txsUtxos(hash);
-//       // console.log("txUtxo: ", txUtxo)
-
-//       // if (!res.ok) throw new Error(`Failed fetching ${hash}`);
-
-//       const inInputs = txUtxo.inputs.some(i => i.address === address);
-//       const inOutputs = txUtxo.outputs.some(o => o.address === address);
-
-//       const inputAmt = txUtxo.inputs
-//         .filter(i => i.address === address)
-//         .reduce(
-//           (sum, i) =>
-//             sum + Number(i.amount.find(a => a.unit === "lovelace")?.quantity || 0),
-//           0
-//         );
-
-//       // console.log("inputAmt: ", inputAmt)
-//       const outputAmt = txUtxo.outputs
-//         .filter(o => o.address === address)
-//         .reduce(
-//           (sum, o) =>
-//             sum + Number(o.amount.find(a => a.unit === "lovelace")?.quantity || 0),
-//           0
-//         );
-
-
-//       let type;
-//       if (inInputs && !inOutputs) {
-//         type = "outgoing";
-//       } else if (!inInputs && inOutputs) {
-//         type = "incoming";
-//       } else if (inInputs && inOutputs) {
-//         type = outputAmt > inputAmt ? "incoming" : "outgoing";
-//         if (outputAmt === inputAmt) type = "self";
-//       } else {
-//         type = "unknown";
-//       }
-//       console.log(hash, type)
-
-//     }
-
-
-
-//     // return {
-//     //   hash: txUtxo.hash,
-//     //   type,
-//     //   inputAmt,
-//     //   outputAmt,
-//     //   netChange: outputAmt - inputAmt
-//     // };
-  
-//   }
-
   beforeAll(async () => {
   });
 
@@ -101,10 +41,6 @@ describe('transactions', () => {
       txList.sort()
 
       util.saveResult(txList, "blockfrost", "transactions", `${address}_hash.json`);
-
-      // console.log("TxLIst", txList)
-    //   const classified = await classifyTransactions(address, txList);
-      // console.log(classified);
 
     })
 

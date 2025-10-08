@@ -26,11 +26,11 @@
     "test": "test"
   },
   "scripts": {
-    "test:gc:tx:new":               "$npm_package_config_jest test/gamechanger-new/transactions.test.js  ",
-    "test:gc:tx:new_hashonly":      "$npm_package_config_jest test/gamechanger-new/transactions_hash.test.js  ",
-    "test:gc:tx:original":          "$npm_package_config_jest test/gamechanger-orig/transactions_hashfix.test.js  ",
-    "test:gc:tx:diff":              "$npm_package_config_jest test/compare/transactions_diff.test.js",
-    "test:blockfrost:tx":           "$npm_package_config_jest test/blockfrost/transactions.test.js"
+    "test:gc-new:tx":           "$npm_package_config_jest test/gamechanger-new/transactions.test.js  ",
+    "test:gc-new:tx:hashonly":  "$npm_package_config_jest test/gamechanger-new/transactions_hash.test.js  ",
+    "test:gc-orig:tx":          "$npm_package_config_jest test/gamechanger-orig/transactions_hashfix.test.js  ",
+    "test:blockfrost:tx":       "$npm_package_config_jest test/blockfrost/transactions.test.js",
+    "test:compare:gc-new:blockfrost:tx-hash": "$npm_package_config_jest /compare/transactions_hash__gamechanger-new_blockfrost.test.js"
   },
   "repository": {
     "type": "git",
