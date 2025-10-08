@@ -1,0 +1,13 @@
+
+  query GetAssets(
+    $order_by: [Asset_order_by!]
+    $where: Asset_bool_exp
+  ) {
+  assets(
+    order_by:$order_by
+    where:$where
+  ){
+    fingerprint
+  }
+  }
+  

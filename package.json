@@ -26,10 +26,14 @@
     "test": "test"
   },
   "scripts": {
-    "test:gc-new:tx":           "$npm_package_config_jest test/gamechanger-new/transactions.test.js  ",
-    "test:gc-new:tx:hashonly":  "$npm_package_config_jest test/gamechanger-new/transactions_hash.test.js  ",
-    "test:gc-orig:tx":          "$npm_package_config_jest test/gamechanger-orig/transactions_hashfix.test.js  ",
+    "test:gc-new:paymentAddress":     "$npm_package_config_jest test/gamechanger-new/paymentAddress.test.js",
+    "test:blockfrost:paymentAddress": "$npm_package_config_jest test/blockfrost/paymentAddress.test.js",
+    "test:gc-new:tx":           "$npm_package_config_jest test/gamechanger-new/transactions.test.js",
+    "test:gc-new:tx:hashonly":  "$npm_package_config_jest test/gamechanger-new/transactions_hash.test.js",
+    "test:gc-orig:tx":          "$npm_package_config_jest test/gamechanger-orig/transactions_hashfix.test.js",
     "test:blockfrost:tx":       "$npm_package_config_jest test/blockfrost/transactions.test.js",
+    "test:gc-new:assets":       "$npm_package_config_jest test/gamechanger-new/assets.test.js",
+    "test:gc-orig:assets":       "$npm_package_config_jest test/gamechanger-orig/assets.test.js",
     "test:compare:gc-new:blockfrost:tx-hash": "$npm_package_config_jest /compare/transactions_hash__gamechanger-new_blockfrost.test.js"
   },
   "repository": {

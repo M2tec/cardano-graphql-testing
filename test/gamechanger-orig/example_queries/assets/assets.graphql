@@ -1,13 +1,13 @@
 
   query GetAssets(
     #$limit: Int
-    # $order_by: [Asset_order_by!]
+    $order_by: [Asset_order_by!]
     #$offset: Int
     $where: Asset_bool_exp
   ) {
   assets(
     #limit:$limit
-    order_by: [FINGERPRINT_ASC]
+    order_by:$order_by
     #offset:$offset
     where:$where
   ){

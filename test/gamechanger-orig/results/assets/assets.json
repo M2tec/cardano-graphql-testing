@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset1tsjrncfc92wsyc2hee2w0wpve6l5pqcf62dqdf"
+    },
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset189sq3uvt2zrv238knkhjfxct40r3vurmk0dfuc"
+    },
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset1sgmyd0my0madhqm87jxk7aesearex0j587s490"
+    },
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset10m73lulft4w2h0sjnx3qn92rap48qyn8hzp4l9"
+    },
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset1ge07knf9apppncvtqtuteta3nlmkn5s6y3nfa4"
+    },
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset1t56ejjnl4lwd4l35h69965c806p53rqprztf9x"
+    },
+    {
+      "__typename": "Asset",
+      "fingerprint": "asset1gna02j50ysnz5uultuyejvdw0y5q3cdf55xkjn"
+    }
+  ]
+}

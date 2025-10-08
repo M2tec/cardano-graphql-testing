@@ -40,6 +40,7 @@ export const testClient = {
   ),
   preprodOrig: buildClient.bind(this,
     'https://preprod-moonflower.m2tec.nl/cardano-graphql'
+    // 'https://ar03a.gamechanger.finance:2096/cardano-graphq-legacyl/graphql'
   )
 }
 

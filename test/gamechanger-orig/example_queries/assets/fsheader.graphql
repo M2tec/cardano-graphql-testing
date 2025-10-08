@@ -1,0 +1,59 @@
+query GetFSHeader {
+      assets(
+          where: {_and:[
+    {
+        fingerprint:{_eq:"asset1hp3au4gqa3pfl500nxta39u47ecw9y3l366lvv"},
+        tokenMints:{
+            transaction:{
+                mint:{
+                    quantity:{_gte:"1"}   
+                }
+            }
+        }
+    },
+{tokenMints:{transaction:{_and:[{outputs:{
+        address:{_in: ["addr_test1qp0wtcxyr89ps9afj9zunkks2ag2ut737a86yqm826wt9glepjs00hysz9zg9qlpyv9h90eudca80h7sy4hxyzvuvt8spesqdn","addr_test1qrl07u9ssdtdwtzhrt0zrrr79yejxhfvmsmjt9jxqyaz0ktp6ydulqht6r9z4ld0jms3a3c7gw45u32vhc2ftdp2f6rqvz02jw"] },
+        value:{_gte:"2000000"}
+    }},
+{metadata:{key:{_eq: "423704323370000"}}},
+{metadata:{key:{_in: ["729003662922596","727053662589393","729987246090735","728476182280450","721332594941195","728510000000000"] }}}]}}}]}
+          
+        ) {
+        assetName
+        policyId
+        fingerprint
+        tokenMints_aggregate {
+          aggregate {
+            sum {
+              quantity
+            }
+            count
+          }
+        }
+        tokenMints(
+          
+  limit: 1  
+  order_by: {transaction: {block: {forgedAt: desc}}}
+  
+        ) {
+          transaction {
+            hash
+            invalidBefore
+            invalidHereafter
+            inputs{
+              address
+            }
+            metadata {
+              key
+              value
+            }   
+            block{
+              slotNo
+            }         
+
+          }
+        }
+      }
+    }
+  
+    
